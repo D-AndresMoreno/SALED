@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Home from './components/Home';
+import Nosotros from './components/Nosotros';
+import ApoyoAcademico from './components/ApoyoAcademico';
+import Eventos from './components/Eventos';
+import ApoyoEstudiantil from './components/ApoyoEstudiantil';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+  render(){
+    return (
+        <Router > 
+            <Switch>
+              <Route path = {"/"} exact component = {Home}/>
+              <Route path = {"/nosotros"} component = {Nosotros}/>
+              <Route path = {"/blog"} component = {Eventos}/>
+              <Route path = {"/proyectos"} component = {ApoyoAcademico}/>
+              <Route path = {"/contacto"} component = {ApoyoEstudiantil}/>
+            </Switch>
+        </Router>
+    );
+  }
 }
 
 export default App;
