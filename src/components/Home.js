@@ -17,7 +17,7 @@ class Home extends React.Component{
                 
                     <nav className="nav">
                         <ul>
-                            <li><a href="/Nosotros">Home</a></li>
+                            <li><a href="/NosotrosHola">Home</a></li>
                             <li><a href="/Contacto">Eventos</a></li>
                             <li><a href="/Anuncios">Anuncios</a></li>
                             <li><a href="/Nosotros">Nosotros</a></li>
