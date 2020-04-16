@@ -1,9 +1,10 @@
-import React from 'react';
+import React from 'react'
 import 'materialize-css/dist/css/materialize.min.css'
 import M from 'materialize-css'
-import navbar from '../r_components/Navbar'
 import Footer from '../r_components/Footer'
 import LogoSaled from  '../images/LogoSaled.png'
+import Navbar from '../r_components/Navbar'
+import Evento from '../r_components/Evento'
 
 class Home extends React.Component{
     constructor(){
@@ -12,10 +13,16 @@ class Home extends React.Component{
 
     render(){
         return(
-            <div className = "homeContactBox">
-                <img className= "homeContact" src="https://tec.mx/sites/default/files/styles/header_full/public/2018-01/bibliotecacover.jpg?itok=QDIzgwe5"/>
-                <img className= "logoSaled" src={LogoSaled}/>
+            <div>
+            <Navbar></Navbar>
+                <div className = "eventoMainBox">
+                    
+                    <Evento>
+
+                    </Evento>
+                </div>
             </div>
+            
         )
     }
     

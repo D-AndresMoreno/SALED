@@ -15,15 +15,14 @@ class Home extends React.Component{
         return(
             
             <div className = "homeContactBox">
-                
                     <nav className="nav">
-                        <ul>
+                        <ul style={{marginTop:100}}>
                             <li><a href="/Nosotros">Home</a></li>
-                            <li><a href="/Contacto">Eventos</a></li>
+                            <li><a href="/Eventos">Eventos</a></li>
                             <li><a href="/Anuncios">Anuncios</a></li>
                             <li><a href="/Nosotros">Nosotros</a></li>
-                            <li><a href="/Contacto">Apoyo Academico</a></li>
-                            <li><a href="/Anuncios">Apoyo Estudiantil</a></li>
+                            <li><a href="/ApoyoAcademico">Apoyo Academico</a></li>
+                            <li><a href="/ApoyoEstudianitl">Apoyo Estudiantil</a></li>
                         </ul>
                      </nav>
                      

@@ -12,7 +12,8 @@ class Nosotros extends React.Component{
 
     render(){
         return(
-            <Navbar>
+            <div>
+                <Navbar></Navbar>
                 <div className="maincontainer">
                     
                     <div className="thecard">
@@ -28,7 +29,7 @@ class Nosotros extends React.Component{
                     </div>
 
                 </div>
-            </Navbar>
+            </div>
         )
     }
     

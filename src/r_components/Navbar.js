@@ -16,11 +16,11 @@ class Navbar extends React.Component{
               </a>
               <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="/">Home</a></li>
-                <li><a href="/Contacto">Eventos</a></li>
+                <li><a href="/Eventos">Eventos</a></li>
                 <li><a href="/Anuncios">Anuncios</a></li>
                 <li><a href="/Nosotros">Nosotros</a></li>
-                <li><a href="/Contacto">Apoyo Academico</a></li>
-                <li><a href="/Anuncios">Apoyo Estudiantil</a></li>
+                <li><a href="/ApoyoAcademico">Apoyo Academico</a></li>
+                <li><a href="/ApoyoEstudiantil">Apoyo Estudiantil</a></li>
               </ul>
             </div>
           </nav>

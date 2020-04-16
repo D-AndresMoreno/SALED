@@ -14,10 +14,10 @@ class App extends React.Component {
         <Router > 
             <Switch>
               <Route path = {"/"} exact component = {Home}/>
-              <Route path = {"/nosotros"} component = {Nosotros}/>
-              <Route path = {"/blog"} component = {Eventos}/>
-              <Route path = {"/proyectos"} component = {ApoyoAcademico}/>
-              <Route path = {"/contacto"} component = {ApoyoEstudiantil}/>
+              <Route path = {"/Nosotros"} component = {Nosotros}/>
+              <Route path = {"/Eventos"} component = {Eventos}/>
+              <Route path = {"/ApoyoAcademico"} component = {ApoyoAcademico}/>
+              <Route path = {"/ApoyoEstudiantil"} component = {ApoyoEstudiantil}/>
             </Switch>
         </Router>
     );
