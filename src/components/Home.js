@@ -4,6 +4,7 @@ import M from 'materialize-css'
 import Navbar from '../r_components/Navbar'
 import Footer from '../r_components/Footer'
 import LogoSaled from  '../images/LogoSaled.png'
+import persona1 from  '../images/persona1.jpg'
 
 class Home extends React.Component{
     constructor(){
@@ -17,7 +18,7 @@ class Home extends React.Component{
                 
                     <nav className="nav">
                         <ul>
-                            <li><a href="/NosotrosAlex mlp">Home</a></li>
+                            <li><a href="/Nosotros">Home</a></li>
                             <li><a href="/Contacto">Eventos</a></li>
                             <li><a href="/Anuncios">Anuncios</a></li>
                             <li><a href="/Nosotros">Nosotros</a></li>
@@ -25,7 +26,8 @@ class Home extends React.Component{
                             <li><a href="/Anuncios">Apoyo Estudiantil</a></li>
                         </ul>
                      </nav>
-            
+                     
+
             </div>
             
         )

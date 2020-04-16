@@ -51,8 +51,9 @@
 
 
 .brand-logo-tec{
-  width:15%;
-  height: 107%;
+  width:14%;
+  height: 122%;
+  justify-content: center;
 }
 
 
@@ -94,6 +95,122 @@
   font-family: "Arial Black", Gadget, sans-serif;
 }*/
 
-.homeContactBox .logoSaled{
-  z-index: 999;
+
+
+
+
+
+
+
+/*Parte del cacas*/
+.maincontainer{
+  position: absolute;
+  width: 250px;
+  height: 320px;
+  background: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  box-shadow: 0.5rem 0.5rem 3rem rgba(231, 17, 17,0.5);
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard:hover{
+  transform: rotateY(180deg);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+ .thefront{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: white;
+  color: #000;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: white;
+  color: #333;
+  transform: rotateY(180deg);
+  clear: float;
+}
+
+
+/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+.thefront h1{
+  font-family: 'zilla slab', sans-serif;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 100%;
+  text-align: center; 
+  color: rgb(216, 38, 38);
+}
+.theback h1{
+  font-family: 'zilla slab', sans-serif;
+  font-weight: bold;
+  font-size: 100%;
+  color: rgb(216, 38, 38);
+  margin: 50px 30px;
+}
+.thefront img{
+    width: 8rem;
+    height: 8rem;
+    object-fit: contain;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.theback img{
+    width: 4.5rem;
+    height: 4.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+    margin: 20px 15px;
+}
+.thefront p{
+    font-family: 'zilla slab', sans-serif;
+    padding: 15px;
+    font-weight: normal;
+    font-size: 80%;
+    text-align: center;
+} 
+.theback p{
+    font-family: 'zilla slab', sans-serif;
+    padding: 15px;
+    font-weight: normal;
+    font-size: 80%;
+    text-align: center;
+    display: block;
 }
