@@ -2,7 +2,6 @@ import React from 'react'
 import 'materialize-css/dist/css/materialize.min.css'
 import M from 'materialize-css'
 import Footer from '../r_components/Footer'
-import LogoSaled from  '../images/LogoSaled.png'
 import Navbar from '../r_components/Navbar'
 import Evento from '../r_components/Evento'
 
