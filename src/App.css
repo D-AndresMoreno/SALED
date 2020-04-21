@@ -21,6 +21,14 @@
   color: #09d3ac;
 }
 
+/*Instagram*/
+.instagram{
+border:none; 
+overflow:hidden;  
+width:260px; 
+height:260px;
+}
+
 
 
 /*NAVBAR*/
@@ -103,14 +111,55 @@
 /*EVENTO CARD*/
 
 .card{
-  width: 40%;
+  width: 70%;
+  height: 80%;
 }
 
 /*Anuncios*/
 .anunciosMainbox{
-  text-align: center;
+  display: flex;
 }
 
+.row1{
+  background-color: rgb(248, 236, 196);
+  height: 60vh;
+}
+
+.row2{
+  background-color: rgb(213, 205, 178);
+  height: 40vh;
+}
+
+.column1{
+  height: inherit;
+  
+}
+
+.column2{
+  height: inherit;
+  background-color: brown;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.column3{
+  float: left;
+  width: 50%;
+}
+
+.column4{
+  float: right;
+  width: 50%;
+}
+
+.evento1{
+  width: 50%
+}
+
+.evento2{
+  width: 50%
+}
 
 
 

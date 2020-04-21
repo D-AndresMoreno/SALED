@@ -13,13 +13,13 @@ class Evento extends React.Component{
                 <div className="col s12 m6">
                     <div className="card" style={{height:"10"}}>
                         <div className="card-image">
-                            <img src="https://lh3.googleusercontent.com/proxy/ThD0R6OQgOvCyj3802MRNvFF8qRSGyny-QjtdSaO0z8r1RRQ-ALjsy8QD3X67Os7DoFO_XmFUv0H0TfZ9TNdo6QsCJVQOV_G_EO-B22g2KrqGxrSzQ"/>
-                            <a className="btn-floating btn-large halfway-fab waves-effect waves-light red">19 Feb<img src="https://cdn.clipart.email/5b5bf909fadc5887f85ed1eaa274517d_small-red-apple-clip-art-at-clkercom-vector-clip-art-online-_576-595.png"/></a>
+                            <img src="https://i1.wp.com/erizos.mx/wp-content/uploads/2020/03/kemonito.jpg?resize=1080%2C1080&ssl=1"/>
+                            <a href="/Eventos" className="btn-floating btn-large halfway-fab waves-effect waves-light red">{this.props.fechaEvento}</a>
                         </div>
                         <div className="card-content">
-                        <span className="card-title">Vergasos</span>
-                        <p>Que onda perras, se arma en el establo para agarrarnos a putasos el barrio 46 vs los discipulos del patron. No gatos $200 de cover</p>
-                        <p><a href="#">Más Información</a></p>
+                        <span className="card-title">{this.props.tituloEvento}</span>
+                        <p>{this.props.descripcionEvento}</p>
+                        <p><a href="/Eventos">Más Información</a></p>
                         </div>
                     </div>
                 </div>
