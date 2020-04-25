@@ -101,7 +101,6 @@ height:260px;
 
 
 .logoSaled{
-  
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -109,154 +108,212 @@ height:260px;
 }
 
 /*EVENTO CARD*/
-
 .card{
-  width: 70%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
+}
+
+.containerEvento{
+  width: inherit;
+  height: inherit;
 }
 
 /*Anuncios*/
-.anunciosMainbox{
+
+.tituloAnuncios{
+  text-align: center;
+  font-weight: bolder;
+}
+
+.row1C{
   display: flex;
 }
 
-.row1{
-  background-color: rgb(248, 236, 196);
-  height: 60vh;
+.box1{
+  flex:10;
+  border:1px black solid;
 }
 
-.row2{
-  background-color: rgb(213, 205, 178);
-  height: 40vh;
+.box2{
+  flex: 4;
+  border:1px black solid;
 }
 
-.column1{
-  height: inherit;
-  
+.box3{
+  flex: 4;
+  border:1px black solid;
 }
 
-.column2{
-  height: inherit;
-  background-color: brown;
+.imagenFlex{
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+}
+
+.row2C{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
-.column3{
-  float: left;
-  width: 50%;
+.box4{
+  flex:10;
+  border:1px black solid;
 }
 
-.column4{
-  float: right;
-  width: 50%;
+.box5{
+  flex: 4;
+  border:1px black solid;
 }
 
-.evento1{
-  width: 50%
+.box6{
+  flex: 4;
+  border:1px black solid;
 }
 
-.evento2{
-  width: 50%
+.imagen2Flex{
+  width: 100%;
+  height: 100%;
+  padding: 15px;
 }
-
-
-
 
 
 
 
 /*Parte del cacas*/
-.maincontainer{
-  position: absolute;
-  width: 250px;
+
+.top-container{
+  width: 100%;
+}
+
+.box-1{
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.box-1 h1{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color:black;
+  padding-left: 20px;
+}
+
+.box-1 p{
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.box-2{
+  text-align: center;
+  margin-bottom: 20px;
+  height: 180px;
+  width: 100%;
+  height: 100%;
+}
+
+.box-2 img{
+  height: 100%;
+}
+
+.msg-container{
+  font-family: 'Roboto', sans-serif;
+  margin-top: 20px;
+  text-align: center;
+  color: black;
+}
+
+.cards-container{
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* CARD CONTAINER HOLDS EVERYTHING */
+.card-container{
+  display: inline-block;
+  position: relative;
+  margin-bottom: 25px;
+  width: 280px;
   height: 320px;
-  background: none;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 28px;
 }
 
 /* THE CARD HOLDS THE FRONT AND BACK FACES */
-.thecard{
-  position: relative;
-  top: 0;
-  left: 0;
+.card-L{
   width: 100%;
   height: 100%;
   border-radius: 5px;
   transform-style: preserve-3d;
   transition: all 0.8s ease;
-  box-shadow: 0.5rem 0.5rem 3rem rgba(231, 17, 17,0.5);
+  -webkit-box-shadow: 0px 21px 59px -27px rgba(92,79,79,1);
+-moz-box-shadow: 0px 21px 59px -27px rgba(92,79,79,1);
+box-shadow: 0px 21px 59px -27px rgba(92,79,79,1);
+border: 1px rgb(239, 245, 239) solid;
 }
 
 /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
-.thecard:hover{
+.card-L:hover{
   transform: rotateY(180deg);
+  -webkit-box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
+-moz-box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
+box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
 }
-
 /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
- .thefront{
-  position: absolute;
-  top: 0;
-  left: 0;
+ .front-card{
+  justify-items: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   border-radius: 10px;
   backface-visibility: hidden;
   overflow: hidden;
   background: white;
-  color: #000;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  flex-direction: column;
-  justify-content: center;
+  color: #000; 
 }
 
 /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
-.theback{
+.back-card{
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   border-radius: 10px;
   backface-visibility: hidden;
   overflow: hidden;
   background: white;
   color: #333;
   transform: rotateY(180deg);
-  clear: float;
 }
 
 
 /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
-.thefront h1{
-  font-family: 'zilla slab', sans-serif;
+.front-card h1{
+   font-family: 'zilla slab', sans-serif;
   padding: 20px;
   font-weight: bold;
   font-size: 100%;
   text-align: center; 
-  color: rgb(216, 38, 38);
+  color: black;
+  font-family: 'Roboto', sans-serif;
 }
-.theback h1{
+.back-card h1{
   font-family: 'zilla slab', sans-serif;
   font-weight: bold;
   font-size: 100%;
-  color: rgb(216, 38, 38);
+  color: black;
   margin: 50px 30px;
+  font-family: 'Roboto', sans-serif;
 }
-.thefront img{
+.front-card img{
     width: 8rem;
     height: 8rem;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 50%;
-    margin-top: 15px;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
-.theback img{
+.back-card img{
     width: 4.5rem;
     height: 4.5rem;
     object-fit: cover;
@@ -264,18 +321,78 @@ height:260px;
     float: left;
     margin: 20px 15px;
 }
-.thefront p{
+.front-card p{
     font-family: 'zilla slab', sans-serif;
     padding: 15px;
     font-weight: normal;
     font-size: 80%;
     text-align: center;
+    color: rgb(133, 147, 133);
+    font-family: 'Open Sans', sans-serif;
 } 
-.theback p{
+.back-card p{
     font-family: 'zilla slab', sans-serif;
     padding: 15px;
     font-weight: normal;
     font-size: 80%;
     text-align: center;
-    display: block;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*This block (ends here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+
+@media only screen and (min-width: 768px) {
+
+  .box-1{
+    margin: 35px 0px;
+
+  }
+  
+  .box-1 h1{
+    font-size: 2rem;
+  }
+  
+  .box-1 p{
+    font-size: 1.5rem;
+  }
+  .box-2 {
+    text-align: center;
+  }
+  .box-2 img{
+    width: 80%;
+    height: 20rem;
+  }
+  
+  .msg-container{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 30px;
+  }
+
+  .card-container{
+    margin-bottom: 50px;
+    width: 300px;
+    height: 350px;
+  }
+
+}
+
+@media only screen and (min-width: 1000px) {
+  .top-container{
+    display: flex;
+  }
+  
+  .box-1{
+   flex: 1;
+   padding-left: 20px;
+  }
+  
+  .box-2{
+    flex: 1;
+  }
+  
+  .box-2 img{
+    margin-top: 50px;
+  }
+
 }

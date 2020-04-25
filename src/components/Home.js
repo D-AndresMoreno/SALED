@@ -16,6 +16,7 @@ class Home extends React.Component{
         return(
             <div>
             <NavbarH></NavbarH>
+            <h1 className = "tituloAnuncios">Anuncios</h1>
             <Anuncios></Anuncios>
                 <div className = "homeMainbox">
                    

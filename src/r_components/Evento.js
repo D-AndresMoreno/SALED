@@ -9,9 +9,9 @@ class Evento extends React.Component{
 
     render(){
         return(
-            <div className="row">
+            <div className="containerEvento">
                 <div className="col s12 m6">
-                    <div className="card" style={{height:"10"}}>
+                    <div className="card">
                         <div className="card-image">
                             <img src="https://i1.wp.com/erizos.mx/wp-content/uploads/2020/03/kemonito.jpg?resize=1080%2C1080&ssl=1"/>
                             <a href="/Eventos" className="btn-floating btn-large halfway-fab waves-effect waves-light red">{this.props.fechaEvento}</a>
