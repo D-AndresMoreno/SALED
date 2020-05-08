@@ -25,8 +25,8 @@
 .instagram{
 border:none; 
 overflow:hidden;  
-width:260px; 
-height:260px;
+width:310px; 
+height:310px;
 }
 
 
@@ -42,6 +42,11 @@ height:260px;
   text-align: center;
   box-shadow: none;
   font-weight: bolder;
+}
+
+.nav a{
+  color: white !important;
+  font-size: 1.6em !important;
 }
 
 
@@ -61,7 +66,21 @@ height:260px;
 .nav .ul .li .a{
   text-decoration: none;
   color: #ddd;
-  padding: 30px;
+  padding: 80px;
+}
+
+.cool-link::after{
+  content:'';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width .3s;
+}
+
+.cool-link:hover::after{
+  width: 100%;
+  transition: width .3s;
 }
 
 
@@ -114,8 +133,8 @@ height:260px;
 }
 
 .containerEvento{
-  width: inherit;
-  height: inherit;
+  width: auto;
+  height: auto;
 }
 
 /*Anuncios*/
@@ -131,17 +150,18 @@ height:260px;
 
 .box1{
   flex:10;
-  border:1px black solid;
+}
+
+.eventContainerAnun{
+  padding:10%;
 }
 
 .box2{
   flex: 4;
-  border:1px black solid;
 }
 
 .box3{
   flex: 4;
-  border:1px black solid;
 }
 
 .imagenFlex{
@@ -155,18 +175,30 @@ height:260px;
 }
 
 .box4{
-  flex:10;
-  border:1px black solid;
+  flex:4;
+  margin-left: 2.5%;
+  margin-top: 0%;
+
+}
+
+.redes{
+  margin-top: 0%;
+  font-size: x-large;
 }
 
 .box5{
   flex: 4;
-  border:1px black solid;
+  margin-top: 4%;
+
 }
 
 .box6{
-  flex: 4;
-  border:1px black solid;
+  flex: 10;
+}
+
+.imageEquipoContainer{
+ 
+ 
 }
 
 .imagen2Flex{

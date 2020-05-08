@@ -4,6 +4,7 @@ import Instagram from "../r_components/Instagram"
 import Evento from "../r_components/Evento"
 import M from 'materialize-css'
 import Corona from "../images/Coronavirus.jpg"
+import Facebook from '../r_components/Facebook'
 
 class Anuncios extends React.Component{
     constructor(){
@@ -19,26 +20,30 @@ class Anuncios extends React.Component{
                         <img src = {Corona} className="imagenFlex"></img>
                     </div>
                     <div className = "box2">
-                        <Evento tituloEvento = "Hola2" fechaEvento = "19 Feb"></Evento>
+                        <div className = "eventContainerAnun">
+                            <Evento tituloEvento = "Evento 1" fechaEvento = "19 Feb"></Evento>
+                        </div>   
                     </div>
 
                     <div className = "box3">
-                        <Evento tituloEvento = "Hola1" fechaEvento = "25 May"></Evento>
+                        <div className = "eventContainerAnun">
+                            <Evento tituloEvento = "Evento 2" fechaEvento = "25 May"></Evento>
+                        </div> 
                     </div>
                 </div>
                 <div className = "row2C">
-                    <div className = "box4">
-                        <p>
+                    <div className = "box4">        
+                        <p className = "redes">
                             Siguenos en nuestras redes!
                         </p>
                         <Instagram></Instagram>
                     </div>
                     <div className = "box5">
-                        <Evento tituloEvento = "Hola2" fechaEvento = "19 Feb"></Evento>
+                        <Facebook></Facebook>
                     </div>
 
                     <div className = "box6">
-                        <Evento tituloEvento = "Hola1" fechaEvento = "25 May"></Evento>
+                        <img src = {Corona} className="imagenFlex"></img>
                     </div>
                 </div> 
             </div> 

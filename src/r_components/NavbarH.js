@@ -22,12 +22,12 @@ class NavbarH extends React.Component{
             <div className = "navbarHMainBox">
                     <nav className="nav">
                         <ul style={{marginTop:100}}>
-                            <li><a href="/Nosotros">Home</a></li>
-                            <li><a href="/Eventos">Eventos</a></li>
-                            <li><a href="/Anuncios">Anuncios</a></li>
-                            <li><a href="/Nosotros">Nosotros</a></li>
-                            <li><a href="/ApoyoAcademico">Apoyo Academico</a></li>
-                            <li><a href="/ApoyoEstudianitl">Apoyo Estudiantil</a></li>
+                            <li><a href="/Nosotros" className = "cool-link">Home</a></li>
+                            <li><a href="/Eventos" className = "cool-link">Eventos</a></li>
+                            <li><a href="/Anuncios" className = "cool-link">Anuncios</a></li>
+                            <li><a href="/Nosotros" className = "cool-link">Nosotros</a></li>
+                            <li><a href="/ApoyoAcademico" className = "cool-link">Apoyo Academico</a></li>
+                            <li><a href="/ApoyoEstudiantil" className = "cool-link">Apoyo Estudiantil</a></li>
                         </ul>
                     </nav>
                     <div className = "imgContainer">
@@ -36,22 +36,6 @@ class NavbarH extends React.Component{
 
                     
             </div>
-            /*Parallax Failed
-            <div class="parallax-container">
-                <div className="parallax"><img src="https://www.elsetge.cat/myimg/f/0-5243_pubg-wallpaper-hd.png" alt="" />
-                    <nav className="nav">
-                        <ul style={{marginTop:100}}>
-                            <li><a href="/Nosotros">Home</a></li>
-                            <li><a href="/Eventos">Eventos</a></li>
-                            <li><a href="/Anuncios">Anuncios</a></li>
-                            <li><a href="/Nosotros">Nosotros</a></li>
-                            <li><a href="/ApoyoAcademico">Apoyo Academico</a></li>
-                            <li><a href="/ApoyoEstudianitl">Apoyo Estudiantil</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            */
         )
     }
     
