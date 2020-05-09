@@ -3,12 +3,22 @@ import 'materialize-css/dist/css/materialize.min.css'
 import Instagram from "../r_components/Instagram"
 import Evento from "../r_components/Evento"
 import M from 'materialize-css'
-import Corona from "../images/Coronavirus.jpg"
+import Corona from "../images/Corona2.jpg"
 import Facebook from '../r_components/Facebook'
+import team from '../images/TEAM.jpg'
 
 class Anuncios extends React.Component{
     constructor(){
         super()
+    }
+
+    componentDidMount(){
+        
+    document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.materialboxed');
+            var instances = M.Materialbox.init(elems);
+        });
+
     }
 
     render(){
@@ -17,17 +27,17 @@ class Anuncios extends React.Component{
                 <div className = "row1C">  
 
                     <div className = "box1">
-                        <img src = {Corona} className="imagenFlex"></img>
+                        <img src = {Corona} className="imagenFlex" ></img>
                     </div>
                     <div className = "box2">
                         <div className = "eventContainerAnun">
-                            <Evento tituloEvento = "Evento 1" fechaEvento = "19 Feb"></Evento>
+                            <Evento imagen = "https://cameronscookware.com/wp-content/uploads/2019/12/1080-x-1080-supreme-beautiful-1080x1080-supreme-reverse-search-combination-of-1080-x-1080-supreme.jpg" tituloEvento = "Evento 1" fechaEvento = "19 Feb"></Evento>
                         </div>   
                     </div>
 
                     <div className = "box3">
                         <div className = "eventContainerAnun">
-                            <Evento tituloEvento = "Evento 2" fechaEvento = "25 May"></Evento>
+                            <Evento imagen = "https://wallpapercave.com/wp/wp3788129.jpg" tituloEvento = "Evento 2" fechaEvento = "25 May"></Evento>
                         </div> 
                     </div>
                 </div>
@@ -43,7 +53,9 @@ class Anuncios extends React.Component{
                     </div>
 
                     <div className = "box6">
-                        <img src = {Corona} className="imagenFlex"></img>
+                        <div className = "imageEquipoContainer" >
+                            <img src= {team} className="imagenFlex"></img>
+                        </div>
                     </div>
                 </div> 
             </div> 

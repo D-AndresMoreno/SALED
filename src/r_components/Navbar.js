@@ -9,21 +9,19 @@ class Navbar extends React.Component{
 
     render(){
         return(
-          <nav>
-            <div class="nav-wrapper">
-              <a href="https://tec.mx/en/monterrey">
-                <img className = "brand-logo-tec" src = "https://lh3.googleusercontent.com/proxy/Jw7gQYKLv_Sv6-3-A4Nf0q21GZxMAw2mg6tdRjj_tihotcqSA2chwii_O8F_Sk2unG6T3e5nVwrYfCRylZjugBGkmN2nKnreZYQq13wFi9ke5qM8l8Cc9b9BnH-GXBtEE3TsL5TdfQ" alt="" style={{marginTop:-5}}></img>
-              </a>
-              <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="/">Home</a></li>
-                <li><a href="/Eventos">Eventos</a></li>
-                <li><a href="/Anuncios">Anuncios</a></li>
-                <li><a href="/Nosotros">Nosotros</a></li>
-                <li><a href="/ApoyoAcademico">Apoyo Academico</a></li>
-                <li><a href="/ApoyoEstudiantil">Apoyo Estudiantil</a></li>
+  
+          <div class="nav-wrapper">
+            <nav className="navN">
+              <ul>
+                <li><a href="/" className = "cool-linkN">Home</a></li>
+                <li><a href="/Eventos" className = "cool-linkN">Eventos</a></li>
+                <li><a href="/Nosotros" className = "cool-linkN">Nosotros</a></li>
+                <li><a href="/ApoyoAcademico" className = "cool-linkN">Apoyo Academico</a></li>
+                <li><a href="/ApoyoEstudiantil" className = "cool-linkN">Apoyo Estudiantil</a></li>
+                <li><a href="https://www.shopify.com/free-trial?&term=shopify.com&Network=Search&SiteTarget=&mt=e&adid=260015520879&adpos=&CampaignId=1336245534&branded_enterprise=1&BOID=brand&gclid=Cj0KCQjwhtT1BRCiARIsAGlY51JPEma1VRp_Qn5gbqxwfKttbcGq8zwxdoqv3UmynoB8TpBq7zJO3JcaAjrwEALw_wcB&gclsrc=aw.ds" className = "cool-linkN">Tienda</a></li>
               </ul>
-            </div>
-          </nav>
+            </nav>
+          </div>
         )
     }
 

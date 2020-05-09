@@ -30,8 +30,15 @@ height:310px;
 }
 
 
+.homeMainbox{
+  height: fit-content;
+  width: fit-content;
 
-/*NAVBAR*/
+}
+
+
+
+/*NAVBAR HOME*/
 .nav{
   width: 100%;
   height: 10vh;
@@ -89,6 +96,59 @@ height:310px;
   height: 122%;
   justify-content: center;
 }
+
+/*NAV BAR NORMAL*/
+.navN{
+  width: 100%;
+  height: 10vh;
+  padding-top: 0px; 
+  padding-bottom: 0px; 
+  line-height: 80px;
+  background-color: #0000;
+  text-align: center;
+  box-shadow: none;
+  font-weight: bolder;
+}
+
+.navN a{
+  color: black !important;
+  font-size: 1.6em !important;
+}
+
+
+.navN ul {
+  display: inline-block;
+  list-style-type: none;
+  
+}
+
+.navN .ul .li{
+  list-style: none;
+  display: inline-block;
+  transition: 0.8s all;
+  font-size: 80px;
+}
+
+.navN .ul .li .a{
+  text-decoration: none;
+  color: #f000;
+  padding: 80px;
+}
+
+.cool-linkN::after{
+  content:'';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000000;
+  transition: width .3s;
+}
+
+.cool-linkN:hover::after{
+  width: 100%;
+  transition: width .3s;
+}
+
 
 
 /*HOME*/
@@ -168,7 +228,10 @@ height:310px;
   width: 100%;
   height: 100%;
   padding: 5%;
+
 }
+
+
 
 .row2C{
   display: flex;
@@ -198,7 +261,8 @@ height:310px;
 
 .imageEquipoContainer{
  
- 
+ height: 425px;
+ width: 800px;
 }
 
 .imagen2Flex{
@@ -208,6 +272,45 @@ height:310px;
 }
 
 
+
+
+/*EVENTOS*/
+
+.headerEventos{
+  justify-content: center;
+  display: flex;
+  align-content: center;
+  align-self: center;
+  margin: auto;
+  margin-top: 2%;
+  width: 27%;
+}
+
+.iconoSaled{
+  width: 50px;
+  height: 65px;
+}
+
+.headerEventos .h4{
+  align-self: center;
+}
+
+.boxDescripcionEvento{
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+.descripcionEvento{
+  font-size: x-large;
+}
+
+.eventosMainBox{
+  display: flex;
+}
+
+.eventContainerEvent{
+  padding:8%;
+}
 
 
 /*Parte del cacas*/
@@ -265,7 +368,7 @@ height:310px;
   margin-bottom: 25px;
   width: 280px;
   height: 320px;
-  margin: 28px;
+  margin: 50px;
 }
 
 /* THE CARD HOLDS THE FRONT AND BACK FACES */
@@ -322,9 +425,10 @@ box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
 /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
 .front-card h1{
    font-family: 'zilla slab', sans-serif;
-  padding: 20px;
+   margin: 50px 30px;
+   margin-bottom: 5px;
   font-weight: bold;
-  font-size: 100%;
+  font-size: 150%;
   text-align: center; 
   color: black;
   font-family: 'Roboto', sans-serif;
@@ -332,16 +436,17 @@ box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
 .back-card h1{
   font-family: 'zilla slab', sans-serif;
   font-weight: bold;
-  font-size: 100%;
+  font-size: 150%;
   color: black;
   margin: 50px 30px;
+  margin-bottom: 30px;
   font-family: 'Roboto', sans-serif;
 }
 .front-card img{
     width: 8rem;
     height: 8rem;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 60%;
     margin-top: 30px;
     margin-bottom: 10px;
 }
@@ -355,18 +460,18 @@ box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
 }
 .front-card p{
     font-family: 'zilla slab', sans-serif;
-    padding: 15px;
+    padding: 0px;
     font-weight: normal;
-    font-size: 80%;
+    font-size: 120%;
     text-align: center;
     color: rgb(133, 147, 133);
     font-family: 'Open Sans', sans-serif;
 } 
 .back-card p{
     font-family: 'zilla slab', sans-serif;
-    padding: 15px;
+    padding: 0px;
     font-weight: normal;
-    font-size: 80%;
+    font-size: 120%;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
@@ -428,3 +533,155 @@ box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
   }
 
 }
+
+/*PARTE CACAS 2*/
+
+.anuncios{
+    background-color: white;
+    text-align: center;
+}
+.mentoria{
+    background-color: #FF7A7A;
+    color: white;
+    text-align: center;
+}
+.apoyo{
+    background-color:white;
+    text-align: center;
+}
+.anuncios-title{
+    text-align: center;
+    padding-top: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+.mentoria-title{
+    text-align: center;
+    margin-bottom:5px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 5px;
+}
+.apoyo-title{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+.box-home-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-mentoria{
+    flex: 1;
+    text-align: center;
+    width: 68%;
+    margin: 5px 0px;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px rgb(239, 245, 239) solid;
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.25);
+    background-color: white;
+}
+#bottom-box-mentoria {
+    margin-bottom: 15px;
+}
+.box-mentoria img{
+    width: 100%;
+    height: 12.5rem;
+    object-fit: cover;
+}
+.box-mentoria p{
+    padding: 20px;
+    background-color: white;
+    color: black;
+}
+.box-apoyo{
+    flex: 1;
+    width: 68%;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px rgb(239, 245, 239) solid;
+    margin-bottom: 15px;
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.25);
+}
+.box-apoyo img{
+    width: 100%;
+    height: 12.5rem;
+    object-fit: cover;
+}
+#box-text{
+    flex: 1;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    margin: 20px 50px;
+}
+.box-apoyo h3{
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 0px;
+}
+.button-home {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  footer{
+      margin-top: 20px;
+      text-align: center;
+      background-color: #FF7A7A;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .anuncios{
+        font-size: x-large;
+    }
+    .mentoria-title{
+        font-size: x-large;
+    }
+    .apoyo-title{
+        font-size: x-large;
+        margin-top: 10px;
+    }
+    .box-mentoria{
+        margin: 20px 20px;
+    }
+    .box-mentoria h4{
+        padding: 100px;
+    }
+    .box-mentoria p{
+        padding: 30px;
+    }
+    .button-home{
+        padding: 25px 45px;
+        margin: 15px;
+        margin-bottom: 25px;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+      .box-home-container{
+          flex-direction: row;
+      }
+      .box-mentoria{
+          margin: 0px 40px;
+      }
+      #bottom-box-mentoria{
+          margin-bottom: 0px;
+      }
+      .box-apoyo{
+          flex: .7;
+        margin-right:40px;
+      }
+  }
+
+
+

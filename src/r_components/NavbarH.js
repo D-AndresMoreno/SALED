@@ -21,13 +21,12 @@ class NavbarH extends React.Component{
 
             <div className = "navbarHMainBox">
                     <nav className="nav">
-                        <ul style={{marginTop:100}}>
-                            <li><a href="/Nosotros" className = "cool-link">Home</a></li>
+                        <ul style={{marginTop:105}}>
                             <li><a href="/Eventos" className = "cool-link">Eventos</a></li>
-                            <li><a href="/Anuncios" className = "cool-link">Anuncios</a></li>
                             <li><a href="/Nosotros" className = "cool-link">Nosotros</a></li>
                             <li><a href="/ApoyoAcademico" className = "cool-link">Apoyo Academico</a></li>
                             <li><a href="/ApoyoEstudiantil" className = "cool-link">Apoyo Estudiantil</a></li>
+                            <li><a href="/Tienda" className = "cool-link">Tienda</a></li>
                         </ul>
                     </nav>
                     <div className = "imgContainer">

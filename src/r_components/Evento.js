@@ -1,10 +1,30 @@
 import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css'
-import M from 'materialize-css'
+import firebase from '../initiliazer/initializer'
 
 class Evento extends React.Component{
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
+        this.login = this.login.bind(this);
+    }
+
+    login(){
+        let provider = new firebase.auth.GoogleAuthProvider();
+
+        firebase.auth().signInWithPopup(provider).then(result =>{
+
+            var emailOri = result.user.email.split('@').pop();
+            var emailOri2 = emailOri.substring(0,emailOri.length-3)
+        
+            if(emailOri2 === "itesm" || emailOri2 === "tec"){
+                console.log("Succesfull login")
+                console.log(result.user)
+            }
+            else{
+                firebase.auth().currentUser.delete()
+                console.log("No es valido, usa uno del tec perro")
+            }
+        })  
     }
 
     render(){
@@ -13,13 +33,13 @@ class Evento extends React.Component{
                 <div className="col s12 m6">
                     <div className="card">
                         <div className="card-image">
-                            <img src="https://i1.wp.com/erizos.mx/wp-content/uploads/2020/03/kemonito.jpg?resize=1080%2C1080&ssl=1"/>
+                            <img src={this.props.imagen}/>
                             <a href="/Eventos" className="btn-floating btn-large halfway-fab waves-effect waves-light red">{this.props.fechaEvento}</a>
                         </div>
                         <div className="card-content">
                         <span className="card-title">{this.props.tituloEvento}</span>
                         <p>{this.props.descripcionEvento}</p>
-                        <p><a href="/Eventos">Más Información</a></p>
+                        <p><a  onClick={this.login}>Registrate!</a></p>
                         </div>
                     </div>
                 </div>
