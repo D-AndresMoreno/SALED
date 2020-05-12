@@ -312,6 +312,36 @@ height:310px;
   padding:8%;
 }
 
+.carousel-container{
+  width: 100vh;
+  height: auto;
+  margin: auto;
+}
+
+.carousel{
+  align-self: center;
+  width: inherit;
+}
+
+.btnTienda{
+  border: none;
+  background-color: inherit;
+  padding-bottom: 2%;
+  font-size: xx-large;
+  color: #000000;
+  cursor: pointer;
+}
+
+.containerTienda{
+  align-items: center;
+  
+}
+
+
+
+
+
+
 
 /*Parte del cacas*/
 
@@ -556,10 +586,27 @@ box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
 }
 .mentoria-title{
     text-align: center;
-    margin-bottom:5px;
+    margin-bottom:10px;
     font-family: 'Roboto', sans-serif;
     padding-top: 5px;
 }
+
+.mentoria-title-text{
+  font-weight: bolder;
+}
+
+.btnMent{
+  border: none;
+  background-color: inherit;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  font-size: xx-large;
+  color: #fff;
+
+  cursor: pointer;
+  display: inline-block;
+}
+
 .apoyo-title{
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -570,6 +617,7 @@ box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 3%;
 }
 .box-mentoria{
     flex: 1;
