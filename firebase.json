@@ -1,0 +1,30 @@
+{
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites":[
+      {
+        "source": "/Nosotros",
+        "destination":"/index.html"
+      },
+      {
+        "source": "/ApoyoAcademico",
+        "destination":"/index.html"
+      },
+      {
+        "source": "/ApoyoEstudiantil",
+        "destination":"/index.html"
+      },
+      {
+        "source": "/Eventos",
+        "destination":"/index.html"
+      }
+    ]
+
+
+  }
+}
