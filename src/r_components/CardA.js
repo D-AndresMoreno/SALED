@@ -18,7 +18,7 @@ class CardA extends React.Component{
                         <div className="card-content">
                         <span className="card-title">{this.props.titulo}</span>
                         <p>{this.props.descripcion}</p>
-                        <p><a  onClick={this.login}>Registrate!</a></p>
+                        <p><a  href = "/ApoyoEstudiantil">Conoce más!</a></p>
                         </div>
                     </div>
                 </div>

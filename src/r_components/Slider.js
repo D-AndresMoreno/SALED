@@ -29,14 +29,18 @@ class Slider extends React.Component{
             <div className="slider">
                 <ul className="slides">
                 <li>
-                    <img src= {mentoria2} className= "imagenSlider"/> 
+                    <a href = "/ApoyoEstudiantil">
+                        <img src= {mentoria2} className= "imagenSlider" style = {{cursor:"pointer"}}/> 
+                    </a>
                     <div class="caption center-align">
                     <h3>Conoce el apoyo estudiantil</h3>
                     <h5 class="light grey-text text-lighten-3">Un espacio de mentoría especial para ti.</h5>
                     </div>
                 </li>
                 <li>
-                    <img src= {mentoria1}/> 
+                    <a href = "/ApoyoEstudiantil">
+                        <img src= {mentoria1} style = {{cursor:"pointer"}}/> 
+                    </a>
                     <div class="caption left-align">
                     <h3>Haz que tu conocimiento trascienda</h3>
                     <h5 class="light grey-text text-lighten-3">Postulate como mentor en apoyo estudiantil</h5>

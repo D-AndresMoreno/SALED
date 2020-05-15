@@ -3,9 +3,15 @@ import 'materialize-css/dist/css/materialize.min.css'
 import Instagram from "../r_components/Instagram"
 import Evento from "../r_components/Evento"
 import M from 'materialize-css'
-import Corona from "../images/Corona2.jpg"
+
+
+import Noticias from "../images/Noticias.jpg"
+import Nosotros from "../images/Nosotros.jpg"
+
+
 import Facebook from '../r_components/Facebook'
 import team from '../images/TEAM.jpg'
+import Slider from '../r_components/Slider'
 
 class Anuncios extends React.Component{
     constructor(){
@@ -23,45 +29,44 @@ class Anuncios extends React.Component{
 
     render(){
         return(
-            <div className = "anunciosMainbox">
-                <div className = "row1C">  
-
-                    <div className = "box1">
-                        <img src = {Corona} className="imagenFlex" ></img>
+            <div className="anuncios">
+                <div className="grid-container">
+                    <div className="grid-slider">
+                        <a href="https://tec.mx/es/noticias/nacional/institucion/conecta-el-sitio-oficial-de-noticias-del-tec-de-monterrey">
+                            <img src = {Noticias}/>
+                        </a>
                     </div>
-                    <div className = "box2">
+                    <div className="grid-anuncios1">
                         <div className = "eventContainerAnun">
                             <Evento imagen = "https://cameronscookware.com/wp-content/uploads/2019/12/1080-x-1080-supreme-beautiful-1080x1080-supreme-reverse-search-combination-of-1080-x-1080-supreme.jpg" tituloEvento = "Evento 1" fechaEvento = "19 Feb"></Evento>
-                        </div>   
+                        </div>  
                     </div>
-
-                    <div className = "box3">
+                    <div className="grid-anuncios2">
                         <div className = "eventContainerAnun">
                             <Evento imagen = "https://wallpapercave.com/wp/wp3788129.jpg" tituloEvento = "Evento 2" fechaEvento = "25 May"></Evento>
                         </div> 
                     </div>
-                </div>
-                <div className = "row2C">
-                    <div className = "box4">        
-                        <p className = "redes">
-                            Siguenos en nuestras redes!
-                        </p>
+                    <div className="grid-social1">
                         <Instagram></Instagram>
                     </div>
-                    <div className = "box5">
+                    <div className="grid-social2">
                         <Facebook></Facebook>
                     </div>
-
-                    <div className = "box6">
-                        <div className = "imageEquipoContainer" >
-                            <img src= {team} className="imagenFlex"></img>
-                        </div>
+                    <div className="grid-nosotros">
+                        <a href="https://tec.mx/es/noticias/nacional/institucion/conecta-el-sitio-oficial-de-noticias-del-tec-de-monterrey">
+                            <img src = {Nosotros}/>
+                        </a>
                     </div>
-                </div> 
-            </div> 
+                </div>
+            </div>
+
         )
     }
     
 }
+
+
+
+
 
 export default Anuncios
