@@ -25,7 +25,6 @@ import merc5 from "../images/merc5.png"
 import merc6 from "../images/merc6.png"
 
 
-
 class Home extends React.Component{
     constructor(){
         super()

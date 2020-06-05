@@ -10,7 +10,7 @@ class Evento extends React.Component{
 
     login(){
         let provider = new firebase.auth.GoogleAuthProvider();
-
+        var db = firebase.firestore();
         firebase.auth().signInWithPopup(provider).then(result =>{
 
             var emailOri = result.user.email.split('@').pop();
@@ -19,12 +19,23 @@ class Evento extends React.Component{
             if(emailOri2 === "itesm" || emailOri2 === "tec"){
                 console.log("Succesfull login")
                 console.log(result.user)
+                db.collection('usuarios').doc(result.user.uid).set({
+                    nombre: result.user.displayName,
+                    userId: result.user.uid,
+                    createdAt: new Date().toISOString(),
+                    handle: result.user.email.substring(0, 9)
+                });
+                console.log(result.credential.accessToken);
             }
             else{
                 firebase.auth().currentUser.delete()
                 console.log("No es valido, usa uno del tec perro")
             }
-        })  
+        })
+        .catch(()=> {
+            this.setState({mensajeSnackBar: "Esta cuenta ya existe, o hubo un error al crearla"})
+            this.setState({visibleSnackBar: true});
+        })   
     }
 
     render(){
