@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../r_components/Navbar'
+import MainNav from '../r_components/navigation/MainNav'
 import Footer from '../r_components/Footer'
 import persona1 from  '../images/persona1.jpg'
 import Tec from  '../images/instalacionesTecNP.jpg'
@@ -20,11 +20,6 @@ import Mariana from  '../images/persona1.jpg'
 import Gerardo from  '../images/persona1.jpg'
 import Sergio from  '../images/persona1.jpg'
 
-
-
-
-
-
 class Nosotros extends React.Component{
     constructor(){
         super()
@@ -33,7 +28,7 @@ class Nosotros extends React.Component{
     render(){
         return(
             <div>
-                <Navbar></Navbar>
+                
                 <div className="maincontainer">
                     <div class="top-container">
                         <div class="box-2">
@@ -51,7 +46,7 @@ class Nosotros extends React.Component{
                 </div>
 
                 <div class="cards-container">
-                    <CardP imagen = {Tomas} nombre = "Tomás Montemayor" puesto= "Presidente"></CardP>
+                    <CardP id="nombre-largo" imagen = {Tomas} nombre = "Tomás Montemayor" puesto= "Presidente"></CardP>
                     <CardP imagen = {Ale} nombre = "Alejandra Hernández" puesto= "Vicepresidenta"></CardP>
                     <CardP imagen = {Jimena} nombre = "Jimena Rocha" puesto= "Dir. Planeación Estratégica"></CardP>
                     <CardP imagen = {AnnaKaren} nombre = "Anna Karen Cavazos" puesto= "Dir. Transformación Social"></CardP>

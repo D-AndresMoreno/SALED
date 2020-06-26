@@ -9,7 +9,7 @@ class Instagram extends React.Component{
 
     render(){
         return(
-            <div className="row">
+            <div className ="instagram-container">
                 <iframe src="https://snapwidget.com/embed/816780" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" className="instagram"></iframe>
             </div>
         )

@@ -1,7 +1,7 @@
 import React from 'react'
 import 'materialize-css/dist/css/materialize.min.css'
 import Footer from '../r_components/Footer'
-import Navbar from '../r_components/Navbar'
+import MainNav from '../r_components/navigation/MainNav'
 import Evento from '../r_components/Evento'
 import iconoSaled from "../images/iconoSALEDtransparente.png"
 
@@ -13,14 +13,13 @@ class Home extends React.Component{
     render(){
         return(
             <div>
-                <Navbar></Navbar>
+                
                 <div className="headerEventos">
-                    <img src={iconoSaled} className="iconoSaled" />
                     <h4>Calendario de Eventos</h4>
                 </div>
                 <div className = "boxDescripcionEvento">
                     <p className = "descripcionEvento">
-                        Conoce nuestro itinerario de eventos!
+                        ¡Conoce nuestro itinerario de eventos!
                     </p>
                 </div>
 

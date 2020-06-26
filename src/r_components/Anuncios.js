@@ -46,11 +46,12 @@ class Anuncios extends React.Component{
                             <Evento imagen = "https://wallpapercave.com/wp/wp3788129.jpg" tituloEvento = "Evento 2" fechaEvento = "25 May"></Evento>
                         </div> 
                     </div>
+                    <div className="mensaje-social">¡Síguenos en nuestras redes!</div>
                     <div className="grid-social1">
                         <Instagram></Instagram>
                     </div>
                     <div className="grid-social2">
-                        <Facebook></Facebook>
+                        <Instagram></Instagram>
                     </div>
                     <div className="grid-nosotros">
                         <a href="https://tec.mx/es/noticias/nacional/institucion/conecta-el-sitio-oficial-de-noticias-del-tec-de-monterrey">

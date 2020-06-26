@@ -29,9 +29,6 @@ class NavbarH extends React.Component{
                             <li><a href="/Tienda" className = "cool-link">Tienda</a></li>
                         </ul>
                     </nav>
-                    <div className = "imgContainer">
-                        <img src={logo} className="logoSaled"></img>
-                    </div>
 
                     
             </div>

@@ -1,329 +1,131 @@
 
+/* ---ComponentsStart--- */ 
 
-.homeContainer{
+/* ---Home-Start--- */
+.home-container{
   background-color: white;
-  
 }
-/*Instagram*/
-.instagram{
-border:none; 
-overflow:hidden;  
-width:310px; 
-height:310px;
-}
-
-
-.homeMainbox{
-  height: fit-content;
-  width: fit-content;
-
-}
-
-
-
-/*NAVBAR HOME*/
-.nav{
+.home-photo img{
   width: 100%;
-  height: 10vh;
-  padding-top: 0px; 
-  padding-bottom: 0px; 
-  line-height: 80px;
-  background-color: #0000;
-  text-align: center;
-  box-shadow: none;
-  font-weight: bolder;
-}
-
-.nav a{
-  color: white !important;
-  font-size: 1.6em !important;
-}
-
-
-.nav ul {
-  display: inline-block;
-  list-style-type: none;
-  
-}
-
-.nav .ul .li{
-  list-style: none;
-  display: inline-block;
-  transition: 0.8s all;
-  font-size: 80px;
-}
-
-.nav .ul .li .a{
-  text-decoration: none;
-  color: #ddd;
-  padding: 80px;
-}
-
-.cool-link::after{
-  content:'';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #fff;
-  transition: width .3s;
-}
-
-.cool-link:hover::after{
-  width: 100%;
-  transition: width .3s;
-}
-
-
-.brand-logo-tec{
-  width:14%;
-  height: 122%;
-  justify-content: center;
-}
-
-/*NAV BAR NORMAL*/
-.navN{
-  width: 100%;
-  height: 10vh;
-  padding-top: 0px; 
-  padding-bottom: 0px; 
-  line-height: 80px;
-  background-color: #0000;
-  text-align: center;
-  font-weight: bolder;
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
-    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
-
-
-}
-
-.navN a{
-  color: black !important;
-  font-size: 1.6em !important;
-}
-
-
-.navN ul {
-  display: inline-block;
-  list-style-type: none;
-  
-}
-
-.navN .ul .li{
-  list-style: none;
-  display: inline-block;
-  transition: 0.8s all;
-  font-size: 80px;
-}
-
-.navN .ul .li .a{
-  text-decoration: none;
-  color: #f000;
-  padding: 80px;
-}
-
-.cool-linkN::after{
-  content:'';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #000000;
-  transition: width .3s;
-}
-
-.cool-linkN:hover::after{
-  width: 100%;
-  transition: width .3s;
-}
-
-
-
-/*HOME*/
-
-.navbarHMainBox{
-  height: 735px;
-  background: rgb(35, 35, 71);
-  background-image: url("./images/instalacionesTecNP.jpg");
-  min-height: 380px;
-
-  /* Needed to position the navbar */
-  position: relative;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.parallax{
-  /* Needed to position the navbar */
-  position: relative;
-}
-
-.imgContainer{
-  margin-top:10%;
-}
-
-
-.logoSaled{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-/*EVENTO CARD*/
-.card{
-  width: 100%;
-  height: 100%;
-}
-
-
-.containerEvento{
-  width: auto;
   height: auto;
 }
 
-/*Anuncios*/
-
-.tituloAnuncios{
+/* ---Home:Anuncios--- */
+.titulo-anuncios{
+  margin: 0;
+  margin-top: 3%;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   font-weight: bolder;
-  margin-bottom: 0em;
+  margin-bottom: 3%;
 }
-
-.row1C{
-  display: flex;
-}
-
-.box1{
-  flex:10;
-}
-
 .eventContainerAnun{
-  height:100%;
-  padding:0px;
+  height: 60%;
+  padding: 0px;
+}
+@media only screen and (max-width: 468px) {
+  .eventContainerAnun{
+    margin: 5% 10%;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 469px)  {
+  .eventContainerAnun{
+    margin: 5% 15%;
+  }
+}
+@media only screen and (min-width: 768px)  {
+  .eventContainerAnun{
+    margin: 0% 20%;
+  }
+  .titulo-anuncios{
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+  }
+}
+@media only screen and (min-width: 950px)  {
+  .eventContainerAnun{
+    margin: 0% !important;
+  }
+}
+/* ---Home:Mentoria--- */
+.mentoria-title{
+  margin-top: 15px;
+  text-align: center;
+  background-color: rgb(120, 15, 15);
+  color: white;
+  padding: 1px;
+}
+.mentoria-title-text{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+  margin: 10px 0px;
+  font-weight: bolder;
 }
 
-
-.box2{
-  flex: 4;
+/* ---Home:ApoyoAcademico--- */
+.apoyo-a{
+  background-color: white;
+  color: black;
+  text-align: center;
 }
-
-.box3{
-  flex: 4;
+.apoyo-a-title{
+  text-align: center;
+  margin-bottom:0px;
 }
-
-.imagenFlex{
-  height: 10%;
-  width: auto;
-  padding: 5%;
+.apoyo-a-title-text{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+  margin: 10px 0px;
+  font-weight: bolder;
 }
-
-
-
-.row2C{
+.box-apoyo-a-container{
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1%;
+  margin-bottom: 3%;
+}
+.box-apoyo-a{
+  flex : 1;
+  margin: 5% 10%;
+} 
+@media only screen and (min-width: 1011px){
+  .box-apoyo-a{
+    margin: 5% 3%;
+  }
+}
+@media only screen and (min-width: 850px) and (max-width: 1010px) {
+  .box-apoyo-a{
+    margin: 5% 10%;
+  }
 }
 
-.box4{
-  flex:4;
-  margin-left: 2.5%;
-  margin-top: 0%;
+/* ---Home:Tienda--- */
 
+.home-tienda{
+  background-color: rgb(255, 255, 255);
+  text-align: center;
 }
-
-.redes{
-  margin-top: 0%;
-  font-size: x-large;
+.titulo-tienda{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-weight: bolder;
+  margin: 0;
+  margin-bottom: 10px;
+  background-color: rgb(120, 15, 15);
+  color: rgb(255, 255, 255);
 }
-
-.box5{
-  flex: 4;
-  margin-top: 4%;
-
-}
-
-.box6{
-  flex: 10;
-}
-
-.imageEquipoContainer{
- 
- height: 425px;
- width: 800px;
-}
-
-.imagen2Flex{
-  width: 100%;
-  height: 100%;
-  padding: 15px;
-}
-
-.slider{
-  height: 600px !important;
-}
-
-.slides{
-  height: inherit !important;
-}
-
-
-
-
-
-/*EVENTOS*/
-
-.headerEventos{
-  justify-content: center;
-  display: flex;
-  align-content: center;
-  align-self: center;
-  margin: auto;
-  margin-top: 2%;
-  width: 27%;
-}
-
-.iconoSaled{
-  width: 50px;
-  height: 65px;
-}
-
-.headerEventos .h4{
-  align-self: center;
-}
-
-.boxDescripcionEvento{
-  margin-top: 2%;
-  margin-left: 5%;
-}
-
-.descripcionEvento{
-  font-size: x-large;
-}
-
-.eventosMainBox{
-  display: flex;
-}
-
-.eventContainerEvent{
-  padding:8%;
-}
-
 .carousel-container{
-  width: 100vh; 
+  width: 100%; 
   height: auto;
   margin: auto;
   margin-bottom: -2.5em;
   margin-top: -1.5em;
 }
-
 .carousel{
   align-self: center;
   width: inherit;
 }
-
 .btnTienda{
   border: none;
   background-color: inherit;
@@ -331,58 +133,111 @@ height:310px;
   padding-bottom: 2%;
   font-size: x-large;
   font-weight:bold;
-  color: #000000;
+  color: rgb(52, 49, 49);
   cursor: pointer;
 }
-
 .containerTienda{
   align-items: center;
 }
 
+/* ---Home-End--- */
 
-.box1-mentoria{
-  flex : 1;
+/* ---Eventos-Start--- */
+.headerEventos{
+  justify-content: center;
+  display: flex;
+  align-content: center;
+  align-self: center;
+  margin: auto;
+  margin-top: 0%;
+  width: 80%;
 }
-
-.box2-mentoria{
-  flex : 1;
+.headerEventos h4{
+  font-family: 'Open Sans', sans-serif;
+  align-self: center;
 }
-
-.box3-mentoria{
-  flex : 1;
+.boxDescripcionEvento{
+  text-align: center;
+  margin-top: 0%;
+  margin-bottom: 2%;
 }
-
-
-.eventContainerMent{
-  padding:10%;
+.descripcionEvento{
+  font-size: x-large;
 }
+.eventosMainBox{
+  display: grid;
+  flex-direction: column;
+  grid-row: auto;
+  grid-column: auto;
+  grid-template-areas: 
+  "box1"
+  "box2"
+  "box3"
+  "box4";
+}
+.eventContainerEvent{
+  padding:0%;
+  margin: 2% 10%;
+  margin-bottom: 10%;
+}
+.boxevento1{
+  grid-area: box1;
+}
+.boxevento2{
+  grid-area: box2;
+}
+.boxevento3{
+  grid-area: box3;
+}
+.boxevento4{
+  grid-area: box4;
+}
+@media only screen and (min-width: 768px) {
+  .eventosMainBox{
+    grid-template-areas: 
+    "box1 box2"
+    "box3 box4";
+  }
+}
+@media only screen and (max-width: 768px) {
+  .headerEventos{
+    margin-top: 10%;
+  }
+  .eventContainerEvent{
+    margin: 5% 10%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .headerEventos{
+    margin-top: 12%;
+  }
+}
+/* ---Eventos-End--- */
 
-
-/*Parte del cacas*/
+/* ---Nosotros-Start--- */
 
 .top-container{
   width: 100%;
+  margin-top: 18px;
 }
-
 .box-1{
   width: 100%;
-  margin: 20px 0px;
+  text-align: left;
 }
-
 .box-1 h1{
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  color:white;
-  padding-left: 1rem;
-  background-color: #df3c3c;
-}
-
-.box-1 p{
+  text-align: center;
   font-family: 'Open Sans', sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  color:black;
+  padding-left: 1rem;
+  padding: 5px;
+}
+.box-1 p{
+  font-size: 1rem;
   padding-left: 1rem;
   margin-top: 15px;
 }
-
 .box-2{
   text-align: center;
   margin-bottom: 20px;
@@ -390,40 +245,185 @@ height:310px;
   width: 100%;
   height: 100%;
 }
-
 .box-2 img{
+  width: 100%;
+  height: auto;
+}
+.msg-container{
+  text-align: center;
+  color: black;
+}
+.msg-container h1{
+  font-family: 'Open Sans', sans-serif;
+  padding: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .box-1{
+    margin: 35px 0px;
+  }
+  .box-1 h1{
+  }
+  .box-1 p{
+  }
+  .box-2 {
+    text-align: center;
+  }
+  .box-2 img{
+    width: 80%;
+    height: 20rem;
+  }
+  .msg-container{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 30px;
+  }
+}
+
+/* ---Nosotros-End--- */
+
+/* ---ApoyoEstudiantil-Start--- */
+.apoyo-estudiantil-title {
+  margin-top: 3%;
+  padding-top: 3%;
+}
+.apoyo-estudiantil-title h1{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: 0px 0px;
+  color:black;
+}
+.apoyo-e-box1{
+    grid-area: box1;
+   
+}
+.apoyo-e-box2{
+    margin-bottom: 8%;
+    grid-area: box2;
+  
+}
+.apoyo-estudiantil-container{
+  
+  display: grid;
+  row-gap: 2.5%;
+  grid-template-areas: 
+  "box1 box2";
+  margin: 5.5% 15.5% 10.5% 15.5%;
+}
+@media only screen and (max-width: 400px) {
+  .apoyo-estudiantil-title {
+    padding-top: 5%;
+  }
+}
+@media only screen and (min-width: 590px) {
+  .apoyo-estudiantil-title {
+    padding-top: 10%;
+  }
+}
+@media only screen and (min-width: 760px) {
+  .apoyo-estudiantil-title {
+    padding-top: 0%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .apoyo-estudiantil-container{
+    text-align: center;
+    row-gap: 0;
+    margin: 5.5% 10.5% 10.5% 10.5%;
+  }
+  .apoyo-e-box1{
+    margin: 0% 5% 5% 5%;
+  }
+  .apoyo-e-box2{
+    margin: 5% 5% 0% 5%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .apoyo-estudiantil-container{
+    grid-template-areas: 
+    "box1"
+    "box2";
+  }
+}
+@media only screen and (max-width: 600px) {
+  .apoyo-estudiantil-title{
+    margin-top: 13.1%;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .apoyo-estudiantil-container{
+    grid-template-areas: 
+    "box1 box2";
+    text-align: center;
+    row-gap: 0;
+    margin: 3.5% 3.5% 5.5% 3.5%;
+  }
+  .apoyo-e-box1{
+    margin: 5% 5% 5% 5%;
+  }
+  .apoyo-e-box2{
+    margin: 5% 5% 5% 5%;
+  }
+}
+/* ---ApoyoEstudiantil-End--- */
+
+/* ---ComponentsEnd--- */ 
+
+
+/* ---ReusableComponentsStart--- */
+
+/* ---CardA-Start--- */
+
+#containerCardA{
+  width: 100%;
+}
+#cardA{
+  margin : 0 !important; 
+  width: 100%;
   height: 100%;
 }
-
-
-.msg-container{
-  font-family: 'Roboto', sans-serif;
-  margin-top: 2rem;
-  text-align: center;
-  color: white;
+#cardA-content{
+  
 }
+#cardA-title{
 
-.msg-container h1{
-  background-color: #df3c3c;
 }
+#cardA-description{
 
+}
+#cardA-image img{
+  height: 350px !important;
+}
+#cardA-button a{
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+@media only screen and (min-width: 600px) {
+  #cardA-image img{
+    height: 360px !important;
+  }
+}
+@media only screen and (min-width: 800px) {
+  #cardA-image img{
+    height: 380px !important;
+  }
+}
+/* ---CardA-End--- */
 
+/* ---CardP-Start--- */
 .cards-container{
   margin-top: 30px;
+  margin-bottom: 25px;
   text-align: center;
 }
-
-/* CARD CONTAINER HOLDS EVERYTHING */
 .card-container{
   display: inline-block;
   position: relative;
-  margin-bottom: 25px;
+  margin: 2%;
+  margin-bottom: 12.5%;
   width: 280px;
   height: 320px;
-  margin: 50px;
 }
-
-/* THE CARD HOLDS THE FRONT AND BACK FACES */
 .card-L{
   width: 100%;
   height: 100%;
@@ -431,19 +431,16 @@ height:310px;
   transform-style: preserve-3d;
   transition: all 0.8s ease;
   -webkit-box-shadow: 0px 21px 59px -27px rgba(92,79,79,1);
--moz-box-shadow: 0px 21px 59px -27px rgba(92,79,79,1);
-box-shadow: 0px 21px 59px -27px rgba(92,79,79,1);
-border: 1px rgb(239, 245, 239) solid;
+  -moz-box-shadow: 0px 21px 59px -27px rgba(92,79,79,1);
+  box-shadow: 0px 21px 59px -27px rgba(92,79,79,1);
+  border: 1px rgb(239, 245, 239) solid;
 }
-
-/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
 .card-L:hover{
   transform: rotateY(180deg);
   -webkit-box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
 -moz-box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
 box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
 }
-/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
  .front-card{
   justify-items: center;
   align-items: center;
@@ -457,8 +454,6 @@ box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
   background: white;
   color: #000; 
 }
-
-/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
 .back-card{
   position: absolute;
   top: 0;
@@ -472,135 +467,343 @@ box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
   color: #333;
   transform: rotateY(180deg);
 }
-
-
-/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
 .front-card h1{
-   font-family: 'zilla slab', sans-serif;
-   margin: 50px 30px;
-   margin-bottom: 5px;
+  margin: 50px 30px;
+  margin-bottom: 5px;
   font-weight: bold;
   font-size: 150%;
   text-align: center; 
   color: black;
-  font-family: 'Roboto', sans-serif;
 }
+.front-card img{
+  width: 7.4rem;
+  height: 10rem;
+  object-fit: contain;
+  border-radius: 60%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.front-card p{
+  padding: 0px;
+  font-weight: normal;
+  font-size: 120%;
+  text-align: center;
+  color: rgb(133, 147, 133);
+  font-family: 'Open Sans', sans-serif;
+} 
 .back-card h1{
-  font-family: 'zilla slab', sans-serif;
   font-weight: bold;
   font-size: 150%;
   color: black;
-  margin: 50px 30px;
   margin-bottom: 30px;
-  font-family: 'Roboto', sans-serif;
-}
-.front-card img{
-    width: 8rem;
-    height: 8rem;
-    object-fit: cover;
-    border-radius: 60%;
-    margin-top: 30px;
-    margin-bottom: 10px;
 }
 .back-card img{
-    width: 4.5rem;
-    height: 4.5rem;
-    object-fit: cover;
+    width: 4.1rem;
+    height: 5.5rem;
+    object-fit: contain;
     border-radius: 50%;
     float: left;
-    margin: 20px 15px;
+    margin: 30px 40px;
 }
-.front-card p{
-    font-family: 'zilla slab', sans-serif;
-    padding: 0px;
-    font-weight: normal;
-    font-size: 120%;
-    text-align: center;
-    color: rgb(133, 147, 133);
-    font-family: 'Open Sans', sans-serif;
-} 
 .back-card p{
-    font-family: 'zilla slab', sans-serif;
     padding: 0px;
     font-weight: normal;
     font-size: 120%;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
-
-/*This block (ends here) is merely styling for the flip card, and is NOT an essential part of the flip code */
 
 @media only screen and (min-width: 768px) {
-
-  .box-1{
-    margin: 35px 0px;
-
-  }
-  
-  .box-1 h1{
-    font-size: 2rem;
-  }
-  
-  .box-1 p{
-    font-size: 1.5rem;
-  }
-  .box-2 {
-    text-align: center;
-  }
-  .box-2 img{
-    width: 80%;
-    height: 20rem;
-  }
-  
-  .msg-container{
-    text-align: center;
-    font-size: 1rem;
-    margin-top: 30px;
-  }
-
   .card-container{
     margin-bottom: 50px;
     width: 300px;
     height: 350px;
   }
+}
+
+/* ---CardP-End--- */
+
+/* ---Evento-Start--- */
+.card-title{
+  font-weight: bolder !important;
+  font-weight: lighter;
+}
+.containerEvento{
+  width: 100%;
+}
+.card{
+  margin: 0 !important;
+  width: 100%;
+  height: 100%;
+}
+.card-image img{
+  object-fit: cover !important;
+}
+.card-image a{
+  background-color: rgb(120, 15, 15)  !important;
+}
+.card-button a{
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+}
+/* --Evento-End-- */
+
+/* --Footer-Start--- */
+
+.main-footer{
+  margin: 0;
+  margin-top: 10px;
+  display: grid;
+  background-color: rgb(120, 15, 15);
+  grid-template-columns: 5% 15% 10% 55% 5% 5% 5%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "tec . .  . saled saled saled"
+  "queja queja queja . fb ig m"
+  ;
+}
+.footer-img1{
+  grid-area: tec;
+}
+.footer-img1 img{
+  width: 100px;
+  height: 35px;
+  margin-top: 10px;
+  margin-left: 5px;
+  object-fit: cover;
+}
+.footer-img2{
+  grid-area: saled;
+}
+.footer-img2 img{
+  width: 85%;
+  height: 2rem;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.quejas{
+  margin: 0px 10px;
+  grid-area: queja;
+  color: rgba(235, 219, 219,.79);
+  font-size: 12px;
+}
+.footer-fb{
+  grid-area: fb;
+}
+.footer-ig{
+  grid-area: ig;
+}
+.footer-m{
+  grid-area: m;
+}
+.footer-fb img{
+  width: 100%;
+  height: 1.8rem;
+}
+.footer-ig img{
+  width: 100%;
+  height: 1.8rem;
+}
+.footer-m img{
+  width: 100%;
+  height: 1.4rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-img1 img{
+      width: 100%;
+      height: 3rem;
+      grid-area: tec;
+  }
+  .footer-img2 img{
+      width: 85%;
+      height: 2rem;
+      margin-top: 5px;
+      margin-right: 10px;
+  }
+  .footer-fb img{
+      width: 100%;
+      height: 1.8rem;
+  }
+  .footer-ig img{
+      width: 100%;
+      height: 1.8rem;
+  }
+  .footer-m img{
+      width: 100%;
+      height: 1.4rem;
+  }
+}
+/* ---Footer-End--- */
+
+/* ---Anuncios-Start--- */
+.anuncios{
+  background-color: white;
+  text-align: center;
+}
+.grid-slider{
+  padding: 0px 25px 0px 25px;
+  width: 100%;
+  grid-area: slider;
+}
+.grid-slider img{
+  width: 100%;
+  height: 100%;
+  transition: transform .5s; /* Animation */
+}
+.grid-slider img:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.grid-anuncios1{
+  margin-top: 2%;
+  grid-area: anuncios1;
+}
+.grid-anuncios2{
+  margin-bottom: 2%;
+  grid-area: anuncios2;
+}
+.mensaje-social{
+  text-align: center;
+  font-size: 26px;
+  grid-area: mensaje;
+}
+.grid-social1{
+    grid-area: social1;
+}
+.grid-social2{
+  grid-area: social2;
+}
+.grid-nosotros{
+    padding: 0px 25px 0px 25px;
+    grid-area: nosotros;
+    margin-bottom: 20px;
+}
+.grid-container{
+  display: grid;
+  row-gap: 10px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "slider slider slider slider"
+  "anuncios1 anuncios1 anuncios1 anuncios1"
+  "anuncios2 anuncios2 anuncios2 anuncios2"
+  "mensaje mensaje mensaje mensaje"
+  "social1 social1 social1 social1"
+  "social2 social2 social2 social2"
+  "nosotros nosotros nosotros nosotros"
+  ;
+}
+.grid-nosotros img{
+  width: 100%;
+  padding: 0em; 
+  transition: transform .5s; /* Animation */
+}
+.grid-nosotros img:hover{
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 
 }
+.grid-anuncios1 img{
+    width: 100%;
+    height: 17.5rem;
+    object-fit: cover;
+}
+.grid-anuncios2 img{
+    width: 100%;
+    height: 17.5rem;
+    object-fit: cover;
+}
+@media only screen and (min-width: 950px) {
+  .anuncios{
+      font-size: x-large;
+  }
+  .grid-container{
+    display: grid;
+    column-gap: 8px;
+    grid-template-columns: 25% 25% auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "slider slider anuncios1 anuncios2"
+    "mensaje mensaje . ."
+    "social1 social2 nosotros nosotros"
+    ;
+  }
+  .grid-slider{
+    padding: 0;
+  }
+  .grid-slider img{
+     height: 85%;
+  }
+  .mensaje-social{
+    text-align: center;
+    grid-area: mensaje;
+  }
+  .grid-anuncios1{
+    margin: 0;
+  }
+  .grid-anuncios2{
+    margin: 0;
+  }
+  .grid-nosotros{
+    padding: 0;
+  }
+}
+/* ---Anuncios-End--- */
+/* ---Instagram-Start--- */
+.instagram-container{
+  width: 100%;
+  height: 100%;
+  padding: 0 16%;
+}
+.instagram{
+  border:none; 
+  overflow:hidden;  
+  width:100%; 
+  height: 350px !important;
+}
+@media only screen and (min-width: 500px){
+  .instagram-container{
+    padding: 0% 20%;
+  }
+}
+@media only screen and (min-width: 550px){
+  .instagram-container{
+    padding: 0% 25%;
+  }
+}
+@media only screen and (min-width: 750px){
+  .instagram-container{
+    padding: 0% 30%;
+  }
+}
+@media only screen and (min-width: 950px){
+  .instagram-container{
+    padding: 0;
+  }
+  .instagram{
+    height: 100% !important;
+  }
+}
+/* ---Instagram-End*--- /
+
+/* ---ReusableComponentsEnd--- */
+
+.slider{
+  height: 600px !important;
+  z-index: 0;
+}
+
+.slides{
+  height: inherit !important;
+}
+
 
 @media only screen and (min-width: 1000px) {
   .top-container{
     display: flex;
   }
-  
-  .box-1{
-   flex: 1;
-   padding-left: 20px;
-  }
-  
-  .box-2{
-    flex: 1;
-  }
-  
-  .box-2 img{
-    margin-top: 50px;
-  }
 
-}
-
-.homeTienda{
-  background-color: rgba(230, 211, 173, 0.19);
-  text-align: center;
 }
 /*PARTE CACAS 2*/
-
-.anuncios{
-    background-color: white;
-    text-align: center;
-}
-.mentoria{
-    background-color: white;
-    color: black;
-    text-align: center;
-}
 .apoyo{
     background-color:white;
     text-align: center;
@@ -608,49 +811,19 @@ box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
 .anuncios-title{
     text-align: center;
     padding-top: 5px;
-    font-family: 'Roboto', sans-serif;
-}
-.mentoria-title{
-    text-align: center;
-    margin-bottom:0px;
-    font-family: 'Roboto', sans-serif;
-    padding-top: 5px;
-}
-
-.mentoria-title-text{
-  font-weight: bolder;
-}
-
-
-.btnMent{
-  border: none;
-  background-color: inherit;
-  padding-top: 3%;
-  padding-bottom: 2%;
-  font-size: xx-large;
-  color: #fff;
-
-  cursor: pointer;
-  display: inline-block;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .apoyo-title{
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding-top: 5px;
     margin-bottom: 10px;
-}
-.box-home-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1%;
 }
 .box-mentoria{
     flex: 1;
     text-align: center;
     width: 68%;
-    margin: 5px 0px;
     font-family: 'Open Sans', sans-serif;
     border: 1px rgb(239, 245, 239) solid;
     -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.25);
@@ -701,78 +874,6 @@ box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
     margin: 10px 0px;
 }
 
-.grid-slider{
-  grid-area: slider;
-
-}
-
-.grid-slider img{
-  width: 95%;
-  padding: .5em;
-  transition: transform .5s; /* Animation */
-}
-
-.grid-slider img:hover {
-  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
-.grid-anuncios1{
-    grid-area: anuncios1;
-
-}
-.grid-anuncios2{
-    grid-area: anuncios2;
-
-}
-.grid-social1{
-    grid-area: social1;
-}
-.grid-social2{
-    grid-area: social2;
-}
-.grid-nosotros{
-    grid-area: nosotros;
-}
-
-.grid-nosotros img{
-  width: 100%;
-  padding: 0em; 
-  transition: transform .5s; /* Animation */
-}
-
-.grid-nosotros img:hover{
-  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-
-}
-
-.grid-container{
-    margin: 15px;
-    display: grid;
-    column-gap: 10px;
-    row-gap: 10px;
-    grid-template-columns: 25% 25% auto auto;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "slider slider slider slider"
-    "anuncios1 anuncios1 anuncios2 anuncios2"
-    "social1 social1 social2 social2"
-    "nosotros nosotros nosotros nosotros"
-    ;
-}
-
-.grid-anuncios1 img{
-    width: 100%;
-    height: 17.5rem;
-    object-fit: cover;
-}
-
-.grid-anuncios2 img{
-    width: 100%;
-    height: 17.5rem;
-    object-fit: cover;
-}
-
-
 .button-home {
     font-family: 'Open Sans', sans-serif;
     background-color: white;
@@ -781,17 +882,8 @@ box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
     text-align: center;
     font-size: 16px;
     margin-bottom: 10px;
-  }
-  footer{
-      margin-top: 20px;
-      text-align: center;
-      background-color: #FF7A7A;
-  }
-
+}
   @media only screen and (min-width: 768px) {
-    .anuncios{
-        font-size: x-large;
-    }
     .mentoria-title{
         font-size: x-large;
     }
@@ -813,22 +905,20 @@ box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
         margin: 15px;
         margin-bottom: 25px;
     }
-    .grid-container{
-      margin: 15px;
-      display: grid;
-      gap: 20px;
-      grid-template-columns: 25% 30% auto auto;
-      grid-template-rows: auto;
-      grid-template-areas: 
-      "slider slider anuncios1 anuncios2"
-      "social1 social2 nosotros nosotros"
-      ;
-  }
+    .apoyo-e-box1{
+        margin: 4% 5%;
+    }
+    .apoyo-e-box2{
+        margin: 4% 5%;
+    }
+    .card-container{
+      margin: 2%;
+    }
 
   }
 
   @media only screen and (min-width: 1000px) {
-      .box-home-container{
+      .box-apoyo-a-container{
           flex-direction: row;
       }
       .box-mentoria{
@@ -841,148 +931,16 @@ box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
           flex: .7;
         margin-right:40px;
       }
+      .card-container{
+        margin: 2%;
+      }
   }
 
 
-.apoyo-estudiantil-title{
-    margin-top: 15px;
-    text-align: center;
-    background-color: rgb(177, 34, 34);
-    padding: .01rem 0rem;
-    color: white;
-}
+/* ---Apoyo Academico */
 
-
-.apoyo-estudiantil-container{
-    display: grid;
-    grid-template-areas: 
-    "box1"
-    "box2";
+.container-Apoyo{
+  padding: 2%;
+  margin-top: 3% !important;
 }
-.apoyo-e-box1{
-    height: 10%;
-    grid-area: box1;
-   
-}
-.apoyo-e-box2{
-    height: 10%;
-    grid-area: box2;
-  
-}
-.main-footer{
-    display: grid;
-    background-color: rgb(177, 34, 34);
-    grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "tec tec . . . . . . . . . . . . . . . . saled saled"
-    "queja queja queja queja queja queja queja queja queja queja queja . . . . . . fb ig m"
-    ;
-}
-.footer-img1{
-    grid-area: tec;
-}
-.footer-img1 img{
-    width: 100px;
-    height: 35px;
-    margin-top: 10px;
-    margin-left: 5px;
-    object-fit: cover;
-}
-.footer-img2{
-    grid-area: saled;
-}
-.footer-img2 img{
-    width: 85%;
-    height: 2rem;
-    margin-top: 5px;
-    margin-right: 10px;
-}
-.quejas{
-    margin: 0px 10px;
-    grid-area: queja;
-    color: rgba(235, 219, 219,.79);
-    font-size: 12px;
-}
-.footer-fb{
-    grid-area: fb;
-}
-.footer-ig{
-    grid-area: ig;
-}
-.footer-m{
-    grid-area: m;
-}
-.footer-fb img{
-    width: 100%;
-    height: 1.8rem;
-}
-.footer-ig img{
-    width: 100%;
-    height: 1.8rem;
-}
-.footer-m img{
-    width: 100%;
-    height: 1.4rem;
-}
-@media only screen and (min-width: 768px) {
-    .main-footer{
-        grid-template-areas: 
-        "tec tec . . . . . . . . . . . . . . . . saled saled"
-        "queja queja queja . . . . . . . . . . . . . . fb ig m"
-        ;
-    }
-    .footer-img1 img{
-        width: 100%;
-        height: 3rem;
-        grid-area: tec;
-    }
-    .footer-img2 img{
-        width: 85%;
-        height: 2rem;
-        margin-top: 5px;
-        margin-right: 10px;
-        
-    }
-    .footer-fb img{
-        width: 100%;
-        height: 1.8rem;
-    }
-    .footer-ig img{
-        width: 100%;
-        height: 1.8rem;
-    }
-    .footer-m img{
-        width: 100%;
-        height: 1.4rem;
-    }
-    .apoyo-estudiantil-container{
-        text-align: center;
-        row-gap: 10px;
-    }
-    .apoyo-e-box1{
-      padding-bottom: 300px;
-      margin: 100px 18% 30px 18%;
-  }
-  .apoyo-e-box2{
-      padding-bottom: 300px;
-      margin: 100px 18% 70px 18%;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  .apoyo-estudiantil-container{
-      grid-template-areas: 
-      "box1 box2";
-  }
-  .apoyo-e-box1{
-      padding-bottom: 300px;
-      margin: 80px 8% 80px 20%;
-  }
-  .apoyo-e-box2{
-      padding-bottom: 300px;
-      margin: 80px 20% 80px 8%;
-  }
-}
-
-
 
