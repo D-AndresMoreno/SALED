@@ -1,6 +1,6 @@
 import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css'
-import firebase from '../initiliazer/initializer'
+
 
 class CardA extends React.Component{
     constructor(props){
