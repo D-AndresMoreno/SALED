@@ -19,10 +19,10 @@ class Navlinks extends React.Component{
                     <a href="/Nosotros" className="link">Nosotros</a>
                 </li>
                 <li>
-                    <a href="/ApoyoAcademico" className="link">Apoyo Acádemico</a>
+                    <a href="/Mentoría" className="link">Mentoría</a>
                 </li>
                 <li>
-                    <a href="/ApoyoEstudiantil" className="link">Apoyo Estudiantil</a>
+                    <a href="/Tienda" className="link">Tienda</a>
                 </li>
             </ul>
         </div>
