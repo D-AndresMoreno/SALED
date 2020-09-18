@@ -3,7 +3,7 @@ import 'materialize-css/dist/css/materialize.min.css'
 import Instagram from "../r_components/Instagram"
 import Evento from "../r_components/Evento"
 import M from 'materialize-css'
-
+import FotoHome from  '../images/Artboard 1.svg'
 
 import Noticias from "../images/Noticias.jpg"
 import Nosotros from "../images/Nosotros.jpg"
@@ -31,11 +31,7 @@ class Anuncios extends React.Component{
         return(
             <div className="anuncios">
                 <div className="grid-container">
-                    <div className="grid-slider">
-                        <a href="https://tec.mx/es/noticias/nacional/institucion/conecta-el-sitio-oficial-de-noticias-del-tec-de-monterrey">
-                            <img src = {Noticias}/>
-                        </a>
-                    </div>
+                    
                     <div className="grid-anuncios1">
                         <div className = "eventContainerAnun">
                             <Evento imagen = "https://cameronscookware.com/wp-content/uploads/2019/12/1080-x-1080-supreme-beautiful-1080x1080-supreme-reverse-search-combination-of-1080-x-1080-supreme.jpg" tituloEvento = "Evento 1" fechaEvento = "19 Feb"></Evento>
@@ -46,16 +42,11 @@ class Anuncios extends React.Component{
                             <Evento imagen = "https://wallpapercave.com/wp/wp3788129.jpg" tituloEvento = "Evento 2" fechaEvento = "25 May"></Evento>
                         </div> 
                     </div>
-                    <div className="mensaje-social">¡Síguenos en nuestras redes!</div>
-                    <div className="grid-social1">
-                        <Instagram></Instagram>
-                    </div>
-                    <div className="grid-social2">
-                        <Instagram></Instagram>
-                    </div>
+                   
                     <div className="grid-nosotros">
-                        <a href="https://tec.mx/es/noticias/nacional/institucion/conecta-el-sitio-oficial-de-noticias-del-tec-de-monterrey">
-                            <img src = {Nosotros}/>
+                        <a href="/Nosotros">
+                            <img src = {FotoHome} alt=''></img>
+                            <p>Conoce nuestro equipo</p>
                         </a>
                     </div>
                 </div>

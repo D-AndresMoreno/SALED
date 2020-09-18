@@ -5,11 +5,21 @@
 .home-container{
   background-color: white;
 }
-.home-photo img{
+.home-photo{
   width: 100%;
-  height: 850px !important;
+  height: 600px;
+  background-image: url('./images/instalacionesTecNP.jpg');
+  background-size: cover;
+  background-position-y: 30%;
+  display: flex;
+  justify-content: center;
+  background-blend-mode: multiply;
+  background-color: rgba(68, 2, 2, 0.408);
 }
-
+.home-photo img{
+  height: 60%;
+  align-self: center;
+}
 /* ---Home:Anuncios--- */
 .titulo-anuncios{
   margin: 0;
@@ -27,10 +37,16 @@
   .eventContainerAnun{
     margin: 5% 10%;
   }
+  .home-photo{
+    background-position-x: 35%;
+  }
 }
 @media only screen and (max-width: 768px) and (min-width: 469px)  {
   .eventContainerAnun{
     margin: 5% 15%;
+  }
+  .home-photo{
+    background-position-x: 35%;
   }
 }
 @media only screen and (min-width: 768px)  {
@@ -209,7 +225,8 @@
 }
 @media only screen and (max-width: 500px) {
   .headerEventos{
-    margin-top: 12%;
+    text-align: center;
+    margin-top: 20%;
   }
 }
 /* ---Eventos-End--- */
@@ -252,6 +269,7 @@
 .msg-container{
   text-align: center;
   color: black;
+  padding-top: 15%;
 }
 .msg-container h1{
   font-family: 'Open Sans', sans-serif;
@@ -276,7 +294,8 @@
   .msg-container{
     text-align: center;
     font-size: 1rem;
-    margin-top: 30px;
+    margin-top: 0%;
+    padding-top: 0;
   }
 }
 
@@ -645,6 +664,7 @@ box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
   padding: 0px 25px 0px 25px;
   width: 100%;
   grid-area: slider;
+  display: none;
 }
 .grid-slider img{
   width: 100%;
@@ -672,11 +692,16 @@ box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
 }
 .grid-social2{
   grid-area: social2;
+  display: none;
 }
 .grid-nosotros{
     padding: 0px 25px 0px 25px;
     grid-area: nosotros;
     margin-bottom: 20px;
+    display: none;
+}
+.grid-nosotros p{
+  color: white;
 }
 .grid-container{
   display: grid;
@@ -684,13 +709,13 @@ box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: auto;
   grid-template-areas: 
-  "slider slider slider slider"
+  "nosotros nosotros nosotros nosotros"
   "anuncios1 anuncios1 anuncios1 anuncios1"
   "anuncios2 anuncios2 anuncios2 anuncios2"
   "mensaje mensaje mensaje mensaje"
   "social1 social1 social1 social1"
   "social2 social2 social2 social2"
-  "nosotros nosotros nosotros nosotros"
+  "slider slider slider slider"
   ;
 }
 .grid-nosotros img{
@@ -722,13 +747,13 @@ box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
     grid-template-columns: 25% 25% auto auto;
     grid-template-rows: auto;
     grid-template-areas: 
-    "slider slider anuncios1 anuncios2"
-    "mensaje mensaje . ."
-    "social1 social2 nosotros nosotros"
+    "nosotros nosotros anuncios1 anuncios2"
+    
     ;
   }
   .grid-slider{
     padding: 0;
+    display: block;
   }
   .grid-slider img{
      height: 85%;
@@ -745,6 +770,22 @@ box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
   }
   .grid-nosotros{
     padding: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    background-blend-mode: multiply;
+    background-color: rgb(120, 15, 15);
+  }
+  .grid-nosotros img{
+    height: 60%;
+    align-self: center;
+    margin-top: 15%;
+  }
+  .grid-social2{
+    display: block;
   }
 }
 /* ---Anuncios-End--- */
@@ -944,3 +985,54 @@ box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
   margin-top: 3% !important;
 }
 
+/* ---Denuncia Anonima */
+
+.boxDenuncia a{
+  height: 25%;
+  align-self: center;
+  border: none;
+  padding: 2%;
+  margin-top: 4%;
+  margin-right: 2%;
+  width: 50%;
+  background-color: rgb(120, 15, 15);
+  color: white;
+  text-align: center;
+}
+
+.boxDenuncia p{
+  text-align: justify;
+  width: 80%;
+}
+
+
+.boxDenuncia{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  padding-right: 5%;
+  background-color:rgb(228, 228, 228);
+}
+
+@media only screen and (max-width: 468px) {
+  .boxDenuncia{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .boxDenuncia p{
+    text-align: justify;
+    width: 100%;
+  }
+
+  .boxDenuncia a{
+    margin-top: 5%;
+    width: 300px;
+    margin-bottom: 5%;
+  }
+
+}

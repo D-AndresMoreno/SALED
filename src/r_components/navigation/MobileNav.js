@@ -23,7 +23,7 @@ const MyMobileNavbar = styled.nav`
     flex-flow: column nowrap;
     width: 100%;
     position:relative;
-    margin-top: 44%;
+    margin-top: 65%;
   }
   .link{
     margin: auto auto;

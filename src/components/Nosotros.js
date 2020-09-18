@@ -28,18 +28,6 @@ class Nosotros extends React.Component{
     render(){
         return(
             <div>
-                
-                <div className="maincontainer">
-                    <div class="top-container">
-                        <div class="box-2">
-                            <img src= {Tec} alt=""/>
-                        </div>
-                        <div class="box-1">
-                            <h1>Nuestro equipo</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, est veritatis? Itaque ipsa quo laudantium, quaerat recusandae nostrum eius, minus quidem esse eaque impedit sed consectetur adipisicing elit eos porro neque. Commodi, neque orem ipsum dolor sit amet, consectetur adipisicing elit. Earum, est veritatis? </p>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="msg-container">
                     <h1>Conócenos</h1>
@@ -60,7 +48,7 @@ class Nosotros extends React.Component{
                     <CardP imagen = {Sergio} nombre = "Sergio de los Santos" puesto= "Coord. Transformación Social"></CardP>
 
                 </div>
-                <Footer></Footer>
+             
             </div>
         )
     }

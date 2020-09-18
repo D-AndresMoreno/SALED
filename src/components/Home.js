@@ -1,16 +1,12 @@
 import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css'
 import M from 'materialize-css'
-import Tec from  '../images/instalacionesTecNP.jpg'
-import NavbarH from '../r_components/NavbarH'
-import Anuncios from '../r_components/Anuncios'
-import Footer from '../r_components/Footer'
-import Slider from '../r_components/Slider'
-import MainNav from '../r_components/navigation/MainNav'
+import FotoHome from  '../images/Artboard 1.svg'
 
-import mentoria1 from '../images/bussiness.jpg'
-import mentoria2 from '../images/happy-office.jpg'
-import mentoria3 from '../images/work.jpg'
+import Anuncios from '../r_components/Anuncios'
+
+import Slider from '../r_components/Slider'
+
 
 import apoyo1 from '../images/apoyo1.jpeg'
 import apoyo2 from '../images/apoyo2.jpg'
@@ -45,7 +41,7 @@ class Home extends React.Component{
             <div className = 'home-container'>
     
                 <div className="home-photo">
-                    <img src= {Tec} alt=""/>
+                    <img src = {FotoHome} alt=''></img>
                 </div>
                 <h2 className = "titulo-anuncios">Anuncios</h2>
                 <Anuncios></Anuncios>
@@ -97,7 +93,23 @@ class Home extends React.Component{
                     <button class="btnTienda" href = "/ApoyoAcademico">¡Visita nuestra tienda!</button>
                 </div>
             </div>
-            <Footer></Footer>
+
+            <div className = "boxDenuncia">
+                <div >
+                    <h3 >Denuncia Anónima</h3>
+                    
+                    <p>
+                        En la SALED creamos este espacio seguro para que el alumnado pueda sentirse con la confianza de compartirnos cualquier comentario, duda, 
+                        preocupación, denuncia, observación, queja, solicitar ayuda, etc. de manera COMPLETAMENTE anónima. 
+                        Te damos la opción de dejarnos tus datos en caso de que necesites o quieras que nos comuniquemos contigo. 
+                        Estamos aquí para ti.
+                    </p>
+                </div>
+                    
+                <a href = "http://bit.ly/BuzónAnónimoSALED" target = "_blank">Denuncia</a>  
+
+            </div>
+           
             </div>
         )
     }
