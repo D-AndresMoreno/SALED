@@ -1,9 +1,7 @@
 import React from 'react'
 import 'materialize-css/dist/css/materialize.min.css'
-import Footer from '../r_components/Footer'
-import MainNav from '../r_components/navigation/MainNav'
 import Evento from '../r_components/Evento'
-import iconoSaled from "../images/iconoSALEDtransparente.png"
+
 
 class Home extends React.Component{
     constructor(){
@@ -26,7 +24,7 @@ class Home extends React.Component{
                 <div className = "eventosMainBox">
                         <div className = "boxevento1">
                             <div className = "eventContainerEvent">
-                                <Evento tituloEvento = "Evento 1" imagen = "https://i1.wp.com/erizos.mx/wp-content/uploads/2020/03/kemonito.jpg?resize=1080%2C1080&ssl=1" fechaEvento = "30 May" descripcionEvento = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit"></Evento>
+                                <Evento tituloEvento = "Evento 1" imagen = "https://i1.wp.com/erizos.mx/wp-content/uploads/2020/03/kemonito.jpg?resize=1080%2C1080&ssl=1" fechaEvento = "15 Jun" descripcionEvento = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit"></Evento>
                             </div> 
                         </div>
                         <div className = "boxevento2">

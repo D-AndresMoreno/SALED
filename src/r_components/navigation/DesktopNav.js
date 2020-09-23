@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 import Navlinks from './Navlinks'
+import FotoSaled from  '../../images/SALEDlogo.png'
 
 
 const MyDesktopNavbar = styled.nav`
@@ -80,7 +81,9 @@ const DesktopNav = props => {
             Menú
           </button>
         </MyMobileNavButton> 
+        <img className = "logoNav"src = {FotoSaled}  alt = "" height = "30" style = {{marginLeft: 15, position: "absolute"}}></img>
         <div className="table">
+          
           <Navlinks/>
         </div> 
 

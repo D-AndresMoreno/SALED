@@ -34,6 +34,10 @@
   padding: 0px;
 }
 @media only screen and (max-width: 468px) {
+  .logoNav{
+    display: none;
+  }
+
   .eventContainerAnun{
     margin: 5% 10%;
   }
@@ -178,7 +182,7 @@
   margin-bottom: 2%;
 }
 .descripcionEvento{
-  font-size: x-large;
+  font-size: x-large; 
 }
 .eventosMainBox{
   display: grid;
@@ -547,6 +551,11 @@ box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
   font-weight: bolder !important;
   font-weight: lighter;
 }
+
+.card-description{
+  font-weight: bold;
+}
+
 .containerEvento{
   width: 100%;
 }
@@ -563,7 +572,7 @@ box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
 }
 .card-button a{
   font-weight: 900;
-  color: rgb(0, 0, 0);
+  color:rgb(120, 15, 15);
 }
 /* --Evento-End-- */
 
@@ -773,17 +782,19 @@ box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 15%;
-    height: 80%;
+    height: 90%;
     display: flex;
     justify-content: center;
     background-blend-mode: multiply;
     background-color: rgb(120, 15, 15);
   }
   .grid-nosotros img{
-    height: 60%;
+    height: 45%;
+    width: 75%;
     align-self: center;
-    margin-top: 15%;
+    margin-top: 10%;
   }
+  
   .grid-social2{
     display: block;
   }
@@ -960,7 +971,8 @@ box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
 
   @media only screen and (min-width: 1000px) {
       .box-apoyo-a-container{
-          flex-direction: row;
+        margin-top: -1%;
+        flex-direction: row;
       }
       .box-mentoria{
           margin: 0px 40px;

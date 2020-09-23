@@ -22,7 +22,7 @@ class Navlinks extends React.Component{
                     <a href="/Mentoría" className="link">Mentoría</a>
                 </li>
                 <li>
-                    <a href="/Tienda" className="link">Tienda</a>
+                    <a href="https://www.shopify.com.mx/prueba-gratis?&term=shopify&Network=Search&SiteTarget=&mt=e&adid=269076016233&adpos=&CampaignId=1402161536&branded_enterprise=1&BOID=brand&gclid=CjwKCAjwwab7BRBAEiwAapqpTAfFP0PuKGrdmC0q3E0gw7EmxbR5Mp4QZYz1lYxsbCvCSaAqMmwT-BoCyTwQAvD_BwE" className="link">Tienda</a>
                 </li>
             </ul>
         </div>

@@ -54,7 +54,7 @@ class Home extends React.Component{
             
                 <div className="apoyo-a">
                     <div className="apoyo-a-title">
-                        <h2 className = "apoyo-a-title-text">Apoyo Academico</h2>
+                        <h2 className = "apoyo-a-title-text">Apoyo Académico</h2>
                     </div>
                     <div className="box-apoyo-a-container" id="mentoria-box">
                         <div className = "box-apoyo-a">
@@ -73,7 +73,6 @@ class Home extends React.Component{
                             </div>  
                         </div>
                     </div>
-                
             </div>
             
             <div className = "home-tienda">            

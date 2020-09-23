@@ -16,7 +16,8 @@ class CardP extends React.Component{
                     </div>          
                     <div class="back-card">
                         <img src={this.props.imagen} alt="Foto de Perfil"/><h1>{this.props.nombre}</h1>
-                        <p>Your use of this site is subject to the terms and conditions governing this and all transactions.</p>
+                        <h4>Contacto</h4>
+                        <p>{this.props.contacto}</p>
                     </div>
                 </div>  
             </div>

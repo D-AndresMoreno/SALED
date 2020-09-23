@@ -18,7 +18,7 @@ class CardA extends React.Component{
                         <div className="card-content" id="cardA-content">
                         <span className="card-title" id="cardA-title">{this.props.titulo}</span>
                         <p className = "card-description" id="cardA-description">{this.props.descripcion}</p>
-                        <p className = "card-button" id="cardA-button"><a  href = "/ApoyoEstudiantil">Más información ></a></p>
+                        <p className = "card-button" id="cardA-button"><a  href = "https://drive.google.com/drive/folders/1tSTWvOIxCiax9M1hgMblVrzADdrZmr5r">Más información</a></p>
                         </div>
                     </div>
                 </div>

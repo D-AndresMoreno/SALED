@@ -1,17 +1,9 @@
 import React from 'react'
 import 'materialize-css/dist/css/materialize.min.css'
-import Instagram from "../r_components/Instagram"
 import Evento from "../r_components/Evento"
 import M from 'materialize-css'
-import FotoHome from  '../images/Artboard 1.svg'
+import FotoHome from  '../images/SALEDlogo.png'
 
-import Noticias from "../images/Noticias.jpg"
-import Nosotros from "../images/Nosotros.jpg"
-
-
-import Facebook from '../r_components/Facebook'
-import team from '../images/TEAM.jpg'
-import Slider from '../r_components/Slider'
 
 class Anuncios extends React.Component{
     constructor(){
@@ -39,7 +31,7 @@ class Anuncios extends React.Component{
                     </div>
                     <div className="grid-anuncios2">
                         <div className = "eventContainerAnun">
-                            <Evento imagen = "https://wallpapercave.com/wp/wp3788129.jpg" tituloEvento = "Evento 2" fechaEvento = "25 May"></Evento>
+                            <Evento imagen = "https://wallpapercave.com/wp/wp3788129.jpg" tituloEvento = "Evento 2" fechaEvento = "18 Feb"></Evento>
                         </div> 
                     </div>
                    
@@ -54,7 +46,6 @@ class Anuncios extends React.Component{
 
         )
     }
-    
 }
 
 
