@@ -3,6 +3,8 @@ import 'materialize-css/dist/css/materialize.min.css'
 import Evento from "../r_components/Evento"
 import M from 'materialize-css'
 import FotoHome from  '../images/SALEDlogo.png'
+import Titulo from  '../images/Titulo.png'
+import LegislaTec from  '../images/LegislaTec.png'
 
 
 class Anuncios extends React.Component{
@@ -26,12 +28,12 @@ class Anuncios extends React.Component{
                     
                     <div className="grid-anuncios1">
                         <div className = "eventContainerAnun">
-                            <Evento imagen = "https://cameronscookware.com/wp-content/uploads/2019/12/1080-x-1080-supreme-beautiful-1080x1080-supreme-reverse-search-combination-of-1080-x-1080-supreme.jpg" tituloEvento = "Evento 1" fechaEvento = "19 Feb"></Evento>
+                            <Evento imagen = {Titulo} tituloEvento = "Semana de conferencias" fechaEvento = "19 Oct"></Evento>
                         </div>  
                     </div>
                     <div className="grid-anuncios2">
                         <div className = "eventContainerAnun">
-                            <Evento imagen = "https://wallpapercave.com/wp/wp3788129.jpg" tituloEvento = "Evento 2" fechaEvento = "18 Feb"></Evento>
+                            <Evento imagen = {LegislaTec} tituloEvento = "LegislaTec" fechaEvento = "24 Oct"></Evento>
                         </div> 
                     </div>
                    

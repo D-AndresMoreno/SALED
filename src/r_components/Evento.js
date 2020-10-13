@@ -34,7 +34,7 @@ class Evento extends React.Component{
                     <div className="card">
                         <div className="card-image">
                             <img src={this.props.imagen}/>
-                            <a href="/Eventos" className="btn-floating btn-large halfway-fab waves-effect waves-light red">{this.props.fechaEvento}</a>
+                            
                         </div>
                         <div className="card-content">
                         <span className="card-title">{this.props.tituloEvento}</span>

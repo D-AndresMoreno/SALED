@@ -2,6 +2,12 @@ import React from 'react'
 import 'materialize-css/dist/css/materialize.min.css'
 import Evento from '../r_components/Evento'
 
+//Fotos
+import Titulo from  '../images/Titulo.png'
+import LegislaTec from  '../images/LegislaTec.png'
+import Jornada from  '../images/Jornada.png'
+import Concurso from  '../images/Concurso.png'
+
 
 class Home extends React.Component{
     constructor(){
@@ -24,23 +30,23 @@ class Home extends React.Component{
                 <div className = "eventosMainBox">
                         <div className = "boxevento1">
                             <div className = "eventContainerEvent">
-                                <Evento tituloEvento = "Evento 1" imagen = "https://i1.wp.com/erizos.mx/wp-content/uploads/2020/03/kemonito.jpg?resize=1080%2C1080&ssl=1" fechaEvento = "15 Jun" descripcionEvento = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit"></Evento>
+                                <Evento tituloEvento = "Semana de conferencias" imagen = {Titulo} descripcionEvento = "Semana de conferencias en donde se invitarán a ponentes egresados de la licenciatura en derecho, que se desempeñan en profesiones diferentes a la abogacía. El propósito es conocer las herramientas que otorga el haber estudiado nuestra licenciatura y como esto te da ventajas en cualquier ámbito laboral y para desempeñarte"></Evento>
                             </div> 
                         </div>
                         <div className = "boxevento2">
                             <div className = "eventContainerEvent">
-                                <Evento tituloEvento = "Evento 2" imagen = "https://cameronscookware.com/wp-content/uploads/2019/12/1080-x-1080-supreme-beautiful-1080x1080-supreme-reverse-search-combination-of-1080-x-1080-supreme.jpg" fechaEvento = "16 Jun" descripcionEvento = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit"></Evento>
+                                <Evento tituloEvento = "LegislaTec" imagen = {LegislaTec} descripcionEvento = "Seminario en Derecho Legislativo que será impartido por Académicos, Senadores de la República, Diputados Federales y Diputados del H. Congreso de Nuevo León. . 4 sesiones, en donde se estarán enseñando los aspectos más importantes del proceso legislativo y su normatividad."></Evento>
                             </div>   
                         </div>
 
                         <div className = "boxevento3">
                             <div className = "eventContainerEvent">
-                                <Evento tituloEvento = "Evento 3" imagen = "https://wallpaperaccess.com/full/327366.jpg" fechaEvento = "20 Jul" descripcionEvento = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit"></Evento>
+                                <Evento tituloEvento = "Jornada" imagen = {Jornada} descripcionEvento = "Evento en línea, con duración de dos días con el fin de crear networking entre despachos de talla internacional y nacional, empresas y organizaciones de diferentes ámbitos y estudiantes de derecho. Una oportunidad para que los estudiantes puedan conversar con estos despachos, entregar su CV y tener la oportunidad de empezar a trabajar."></Evento>
                             </div> 
                         </div>
                         <div className = "boxevento4">
                             <div className = "eventContainerEvent">
-                                <Evento tituloEvento = "Evento 4" imagen = "https://wallpapercave.com/wp/wp3788129.jpg" fechaEvento = "25 Jul" descripcionEvento = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit"></Evento>
+                                <Evento tituloEvento = "Concurso" imagen = {Concurso}  descripcionEvento = "El Concurso Nacional de Juicios Orales del Tec en su primera edición tendrá por objetivo la práctica de litigación oral basada en el Sistema Penal Acusatorio además de tener ponencias de alto nivel por parte de reconocidas figuras en el derecho mexicano."></Evento>
                             </div> 
                         </div>
                 </div>
