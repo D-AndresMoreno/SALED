@@ -565,7 +565,7 @@ box-shadow: 0px 42px 96px -27px rgba(92,79,79,1);
   height: 100%;
 }
 .card-image img{
-  object-fit: cover !important;
+  object-fit: cover ;
 }
 .card-image a{
   background-color: rgb(120, 15, 15)  !important;

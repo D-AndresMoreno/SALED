@@ -39,7 +39,7 @@ class Evento extends React.Component{
                         <div className="card-content">
                         <span className="card-title">{this.props.tituloEvento}</span>
                         <p className = "card-description">{this.props.descripcionEvento}</p>
-                        <p className = "card-button"><a  onClick={this.login}>Registrarme</a></p>
+                        <p className = "card-button"><a  href ={this.props.link} target = "_blank" >Registrarme</a></p>
                         </div>
                     </div>
                 </div>

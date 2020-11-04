@@ -15,12 +15,9 @@ import apoyo3 from '../images/apoyo3.jpeg'
 import CardA from '../r_components/CardA'
 
 //Fotos Merch
-import merc1 from "../images/merc1.png"
-import merc2 from "../images/merc2.png"
-import merc3 from "../images/merc3.jpg"
-import merc4 from "../images/merc4.jpg"
-import merc5 from "../images/merc5.png"
-import merc6 from "../images/merc6.png"
+import merc1 from "../images/HoodieGris.png"
+import merc2 from "../images/HoodieRoja.png"
+
 
 
 
@@ -79,12 +76,10 @@ class Home extends React.Component{
                 <h2 className = "titulo-tienda">Tienda</h2>
                 <div className = "carousel-container">
                     <div class="carousel">
-                        <a class="carousel-item" href="https://www.shopify.com/free-trial?&term=shopify.com&Network=Search&SiteTarget=&mt=e&adid=260015520879&adpos=&CampaignId=1336245534&branded_enterprise=1&BOID=brand&gclid=Cj0KCQjwhtT1BRCiARIsAGlY51JPEma1VRp_Qn5gbqxwfKttbcGq8zwxdoqv3UmynoB8TpBq7zJO3JcaAjrwEALw_wcB&gclsrc=aw.ds"><img src={merc1}/></a>
-                        <a class="carousel-item" href="https://www.shopify.com/free-trial?&term=shopify.com&Network=Search&SiteTarget=&mt=e&adid=260015520879&adpos=&CampaignId=1336245534&branded_enterprise=1&BOID=brand&gclid=Cj0KCQjwhtT1BRCiARIsAGlY51JPEma1VRp_Qn5gbqxwfKttbcGq8zwxdoqv3UmynoB8TpBq7zJO3JcaAjrwEALw_wcB&gclsrc=aw.ds"><img src={merc2}/></a>
-                        <a class="carousel-item" href="https://www.shopify.com/free-trial?&term=shopify.com&Network=Search&SiteTarget=&mt=e&adid=260015520879&adpos=&CampaignId=1336245534&branded_enterprise=1&BOID=brand&gclid=Cj0KCQjwhtT1BRCiARIsAGlY51JPEma1VRp_Qn5gbqxwfKttbcGq8zwxdoqv3UmynoB8TpBq7zJO3JcaAjrwEALw_wcB&gclsrc=aw.ds"><img src={merc3}/></a>
-                        <a class="carousel-item" href="https://www.shopify.com/free-trial?&term=shopify.com&Network=Search&SiteTarget=&mt=e&adid=260015520879&adpos=&CampaignId=1336245534&branded_enterprise=1&BOID=brand&gclid=Cj0KCQjwhtT1BRCiARIsAGlY51JPEma1VRp_Qn5gbqxwfKttbcGq8zwxdoqv3UmynoB8TpBq7zJO3JcaAjrwEALw_wcB&gclsrc=aw.ds"><img src= {merc4}/></a>
-                        <a class="carousel-item" href="https://www.shopify.com/free-trial?&term=shopify.com&Network=Search&SiteTarget=&mt=e&adid=260015520879&adpos=&CampaignId=1336245534&branded_enterprise=1&BOID=brand&gclid=Cj0KCQjwhtT1BRCiARIsAGlY51JPEma1VRp_Qn5gbqxwfKttbcGq8zwxdoqv3UmynoB8TpBq7zJO3JcaAjrwEALw_wcB&gclsrc=aw.ds"><img src={merc5}/></a>
-                        <a class="carousel-item" href="https://www.shopify.com/free-trial?&term=shopify.com&Network=Search&SiteTarget=&mt=e&adid=260015520879&adpos=&CampaignId=1336245534&branded_enterprise=1&BOID=brand&gclid=Cj0KCQjwhtT1BRCiARIsAGlY51JPEma1VRp_Qn5gbqxwfKttbcGq8zwxdoqv3UmynoB8TpBq7zJO3JcaAjrwEALw_wcB&gclsrc=aw.ds"><img src={merc6}/></a>
+                        <a class="carousel-item" href="https://saledmty.myshopify.com/"><img src={merc1}/></a>
+                        <a class="carousel-item" href="https://saledmty.myshopify.com/"><img src={merc2}/></a>
+                        <a class="carousel-item" href="https://saledmty.myshopify.com/"><img src={merc1}/></a>
+                        <a class="carousel-item" href="https://saledmty.myshopify.com/"><img src={merc2}/></a>
                     </div>   
                 </div>
 
