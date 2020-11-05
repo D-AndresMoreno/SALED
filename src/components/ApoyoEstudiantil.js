@@ -2,20 +2,13 @@ import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css'
 import M from 'materialize-css'
 
-import firebase from '../initiliazer/initializer'
-
 import apoyo1 from '../images/apoyo1.jpeg'
-
 import apoyo2 from '../images/apoyo2.jpg'
 
 class ApoyoEstudiantil extends React.Component{
     constructor(props){
         super(props);  
-        this.state={
-            email: ""
-        }
 
-        this.login = this.login.bind(this);
     }
 
     componentDidMount(){
@@ -25,24 +18,6 @@ class ApoyoEstudiantil extends React.Component{
           });
     }
 
-    login(){
-        let provider = new firebase.auth.GoogleAuthProvider();
-
-        firebase.auth().signInWithPopup(provider).then(result =>{
-
-            var emailOri = result.user.email.split('@').pop();
-            var emailOri2 = emailOri.substring(0,emailOri.length-3)
-        
-            if(emailOri2 === "itesm" || emailOri2 === "tec"){
-                console.log("Succesfull login")
-                console.log(result.user)
-            }
-            else{
-                firebase.auth().currentUser.delete()
-                console.log("No es valido, usa uno del tec perro")
-            }
-        })  
-    }
 
     render(){
         return(
@@ -56,7 +31,7 @@ class ApoyoEstudiantil extends React.Component{
                         <div className="slider">
                             <ul className="slides">
                             <li>
-                                <a onClick={this.login}>
+                                <a href={"https://docs.google.com/forms/d/e/1FAIpQLSeReZFLdMaN7YmfHU3h_d3hFEFnNDVvdKfhiVmZNPriBbcSsw/viewform?usp=sf_link"} target = "_blank">
                                     <img src= {apoyo1} className= "imagenSlider" style = {{cursor:"pointer"}}/> 
                                 </a>
                                 <div class="caption center-align">
@@ -71,7 +46,7 @@ class ApoyoEstudiantil extends React.Component{
                         <div className="slider">
                             <ul className="slides">
                             <li>
-                                <a onClick={this.login}>
+                                <a href={"https://docs.google.com/forms/d/e/1FAIpQLSduLyossG8o9g5aLsG9CfQOuAIr0JPT1eVdeZNqaawl9TsUlQ/viewform?usp=sf_link"} target = "_blank">
                                     <img src= {apoyo2} className= "imagenSlider" style = {{cursor:"pointer"}}/> 
                                 </a>
                                 <div class="caption center-align">

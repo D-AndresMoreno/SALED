@@ -1,15 +1,10 @@
 import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css'
-import navbar from '../r_components/Navbar'
-import Footer from '../r_components/Footer'
 import M from 'materialize-css'
 
-
 import mentoria1 from '../images/bussiness.jpg'
-
-import mentoria4 from '../images/mentoria4.jpeg'
 import mentoria2 from '../images/happy-office.jpg'
-import mentoria3 from '../images/work.jpg'
+
 
 
 class Slider extends React.Component{

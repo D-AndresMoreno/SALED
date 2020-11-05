@@ -1,6 +1,5 @@
 import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css'
-import M from 'materialize-css'
 
 class Navbar extends React.Component{
     constructor(){
@@ -27,9 +26,5 @@ class Navbar extends React.Component{
 
 }
 
-/*
-<a  href = "https://tec.mx/es">
-<img src="https://queretaro.itesm.mx/wp-content/uploads/2015/06/LogoTecPeque%C3%B1o.png" className="brand-logo-tec"></img>
-</a>*/
 
 export default Navbar

@@ -1,31 +1,12 @@
 import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css'
-import firebase from '../initiliazer/initializer'
+
 
 class Evento extends React.Component{
     constructor(props){
         super(props)
-        this.login = this.login.bind(this);
     }
 
-    login(){
-        let provider = new firebase.auth.GoogleAuthProvider();
-
-        firebase.auth().signInWithPopup(provider).then(result =>{
-
-            var emailOri = result.user.email.split('@').pop();
-            var emailOri2 = emailOri.substring(0,emailOri.length-3)
-        
-            if(emailOri2 === "itesm" || emailOri2 === "tec"){
-                console.log("Succesfull login")
-                console.log(result.user)
-            }
-            else{
-                firebase.auth().currentUser.delete()
-                console.log("No es valido, usa uno del tec perro")
-            }
-        })  
-    }
 
     render(){
         return(
@@ -34,12 +15,11 @@ class Evento extends React.Component{
                     <div className="card">
                         <div className="card-image">
                             <img src={this.props.imagen}/>
-                            
                         </div>
                         <div className="card-content">
                         <span className="card-title">{this.props.tituloEvento}</span>
                         <p className = "card-description">{this.props.descripcionEvento}</p>
-                        <p className = "card-button"><a  href ={this.props.link} target = "_blank" >Registrarme</a></p>
+                        <p className = "card-button"><a  href ={this.props.link} target = "_blank" >Más información</a></p>
                         </div>
                     </div>
                 </div>

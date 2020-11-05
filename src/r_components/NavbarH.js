@@ -1,8 +1,7 @@
 import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css'
 import M from 'materialize-css'
-import Navbar from './Navbar';
-import logo from '../images/LogoSaled.png'
+
 
 class NavbarH extends React.Component{
     constructor(){

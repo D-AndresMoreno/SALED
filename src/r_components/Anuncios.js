@@ -4,7 +4,7 @@ import Evento from "../r_components/Evento"
 import M from 'materialize-css'
 import FotoHome from  '../images/SALEDlogo.png'
 import Titulo from  '../images/Titulo.png'
-import LegislaTec from  '../images/LegislaTec.png'
+import Concurso from  '../images/Concurso.png'
 
 
 class Anuncios extends React.Component{
@@ -33,7 +33,7 @@ class Anuncios extends React.Component{
                     </div>
                     <div className="grid-anuncios2">
                         <div className = "eventContainerAnun">
-                            <Evento link = "https://www.instagram.com/legisla.tec/" imagen = {LegislaTec} tituloEvento = "LegislaTec" fechaEvento = "24 Oct"></Evento>
+                            <Evento link = "https://www.instagram.com/cnjo.tec/" imagen = {Concurso} tituloEvento = "Concurso" fechaEvento = "24 Oct"></Evento>
                         </div> 
                     </div>
                    
