@@ -28,12 +28,12 @@ class Anuncios extends React.Component{
                     
                     <div className="grid-anuncios1">
                         <div className = "eventContainerAnun">
-                            <Evento link = "https://www.instagram.com/saledmty/" imagen = {Titulo} tituloEvento = "Semana de conferencias" fechaEvento = "19 Oct"></Evento>
+                            <Evento link = "https://www.instagram.com/saledmty/" imagen = {Titulo} tituloEvento = "Semana de conferencias"></Evento>
                         </div>  
                     </div>
                     <div className="grid-anuncios2">
                         <div className = "eventContainerAnun">
-                            <Evento link = "https://www.instagram.com/cnjo.tec/" imagen = {Concurso} tituloEvento = "Concurso" fechaEvento = "24 Oct"></Evento>
+                            <Evento link = "https://www.instagram.com/cnjo.tec/" imagen = {Concurso} tituloEvento ="Competencia Interinstitucional"></Evento>
                         </div> 
                     </div>
                    
