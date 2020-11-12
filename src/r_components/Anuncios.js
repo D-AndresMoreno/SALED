@@ -50,8 +50,4 @@ class Anuncios extends React.Component{
     }
 }
 
-
-
-
-
 export default Anuncios

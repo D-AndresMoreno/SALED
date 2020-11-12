@@ -35,8 +35,11 @@ class ApoyoEstudiantil extends React.Component{
                                     <img src= {apoyo1} className= "imagenSlider" style = {{cursor:"pointer"}}/> 
                                 </a>
                                 <div class="caption center-align">
-                                    <h3>Asesorate con un mentor</h3>
-                                    <h5 class="light grey-text text-lighten-3">Cuentanos lo que necesites y te conseguiremos el mentor más adecuado para ti.</h5>
+                                    
+                                    <a href = {"https://docs.google.com/forms/d/e/1FAIpQLSeReZFLdMaN7YmfHU3h_d3hFEFnNDVvdKfhiVmZNPriBbcSsw/viewform?usp=sf_link"}>
+                                        <h3>Asesorate con un mentor</h3>
+                                        <h5 class="light grey-text text-lighten-3" >Cuentanos lo que necesites y te conseguiremos el mentor más adecuado para ti.</h5>
+                                    </a>
                                 </div>
                             </li>
                             </ul>
@@ -50,8 +53,10 @@ class ApoyoEstudiantil extends React.Component{
                                     <img src= {apoyo2} className= "imagenSlider" style = {{cursor:"pointer"}}/> 
                                 </a>
                                 <div class="caption center-align">
-                                    <h3>Postulate como mentor</h3>
-                                    <h5 class="light grey-text text-lighten-3">Elige tu area de expertis y trasciende tu conocimiento.</h5>
+                                    <a href = {"https://docs.google.com/forms/d/e/1FAIpQLSduLyossG8o9g5aLsG9CfQOuAIr0JPT1eVdeZNqaawl9TsUlQ/viewform?usp=sf_link"}>
+                                        <h3>Postulate como mentor</h3>
+                                        <h5 class="light grey-text text-lighten-3" >Elige tu area de expertis y trasciende tu conocimiento.</h5>
+                                    </a>
                                 </div>
                             </li>
                             </ul>
